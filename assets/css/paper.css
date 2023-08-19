@@ -9,17 +9,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
     border-bottom: 1px #efefef solid;
     padding: 2em 0;
 }
 
 .paper-box-image {
-    justify-content: center;
     display: flex;
-    width: 100%;
-    order: 2;
+    align-items: center;
+    margin-right: 1em;
 }
 
 .paper-box-image img {
@@ -29,24 +26,23 @@
 }
 
 .paper-box-text {
-    max-width: 100%;
-    order: 1;
+    flex-grow: 1; /* Allow text to take available space */
     /* Add your Markdown text styles here */
 }
 
-@media screen and (min-width: 768px) {
-    .paper-box-image {
-        justify-content: flex-start;
-        min-width: 200px;
-        max-width: 40%;
-        order: 1;
+@media screen and (max-width: 768px) {
+    .paper-box {
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: flex-start;
     }
-    
+
+    .paper-box-image {
+        margin-right: 0; /* Reset margin for smaller screens */
+        margin-bottom: 1em;
+    }
+
     .paper-box-text {
-        padding-left: 2em;
-        max-width: 60%;
-        order: 2;
-        /* Add your responsive text styles here */
+        width: 100%; /* Full width on smaller screens */
     }
 }
 
