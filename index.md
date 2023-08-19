@@ -24,13 +24,13 @@ Hi! Here is **Jiaxin Ye ([叶嘉鑫]())**. I'm a first-year Ph.D. student majori
 
 ## 📌 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2021</div><img src='images/portaspeech.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2023</div><img src='images/mm23.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[PortaSpeech: Portable and High-Quality Generative Text-to-Speech](https://arxiv.org/abs/2109.15166) \\
-**Yi Ren**, Jinglin Liu, Zhou Zhao
+[Emo-DNA: Emotion Decoupling and Alignment Learning for Cross-Corpus Speech Emotion Recognition](https://arxiv.org/abs/2308.02190)\\
+**Jiaxin Ye**, Yujie Wei, Xin-Cheng Wen, Chenglong Ma, Zhizhong Huang, Kunhong Liu, Hongming Shan
 
-[**Project**](https://portaspeech.github.io/) \| [![](https://img.shields.io/github/stars/NATSpeech/NATSpeech?style=social&label=Code+Stars)](https://github.com/NATSpeech/NATSpeech) \| [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Demo)](https://huggingface.co/spaces/NATSpeech/PortaSpeech)
+[bib](https://arxiv.org/abs/2308.02190)
 </div>
 </div>
 
