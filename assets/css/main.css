@@ -213,7 +213,7 @@ form br{display:none;}
 label,input,button,select,textarea{vertical-align:baseline;*vertical-align:middle;}
 input,button,select,textarea{font-family:'PT Serif',serif;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
 label{display:block;margin-bottom:1.25px;font-weight:bold;color:#333332;cursor:pointer;}label input,label textarea,label select{display:block;}
-input,textarea,select{display:inline-block;width:100%;padding:4px;margin-bottom:1.25px;background-color:#ffffff;border:1px solid #cccccc;color:#333332;}input:hover,textarea:hover,select:hover{border-color:#808080;}
+input,textarea,select{display:inline-block;width:100%;padding:4px;margin-bottom:1.25px;background-color:#f4d5ff;border:1px solid #cccccc;color:#333332;}input:hover,textarea:hover,select:hover{border-color:#808080;}
 .input-mini{width:60px;}
 .input-small{width:90px;}
 input[type="image"],input[type="checkbox"],input[type="radio"]{width:auto;height:auto;padding:0;margin:3px 0;*margin-top:0;line-height:normal;cursor:pointer;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;border:0 \9;}
