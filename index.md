@@ -24,11 +24,11 @@ Hi! Here is **Jiaxin Ye ([叶嘉鑫]())**. I'm a first-year Ph.D. student majori
 
 ## 📚 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2023</div><img src='images/mm23.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2023</div><img src='images/mm23.png' alt="sym" width="50%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Emo-DNA: Emotion Decoupling and Alignment Learning for Cross-Corpus Speech Emotion Recognition](https://arxiv.org/abs/2308.02190)\\
-**Jiaxin Ye**, Yujie Wei, Xin-Cheng Wen, Chenglong Ma, Zhizhong Huang, Kunhong Liu, Hongming Shan
+**Jiaxin Ye**, Yujie Wei, Xin-Cheng Wen, Chenglong Ma, Zhizhong Huang, Kunhong Liu, Hongming Shan<sup>†</sup>
 
 </div>
 </div>
@@ -39,25 +39,25 @@ Hi! Here is **Jiaxin Ye ([叶嘉鑫]())**. I'm a first-year Ph.D. student majori
 <div class='paper-box-text' markdown="1">
 
 [Temporal Modeling Matters: A Novel Temporal Emotional Modeling Approach for Speech Emotion Recognition](https://arxiv.org/abs/2211.08233)\\
-**JiaXin Ye**, Xin-Cheng Wen, YuJie Wei, Yong Xu, KunHong Liu, HongMing Shan
+**JiaXin Ye**, Xin-Cheng Wen, YuJie Wei, Yong Xu, KunHong Liu<sup>†</sup>, HongMing Shan<sup>†</sup>
 
 </div>
 </div>
+
 ---
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2022</div><img src='images/ijcai22.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [CTL-MTNet: A Novel CapsNet and Transfer Learning-Based Mixed Task Net for the Single-Corpus and Cross-Corpus Speech Emotion Recognition](https://arxiv.org/abs/2207.10644)\\
-Xin-Cheng Wen#, **JiaXin Ye#**, Yan Luo, Yong Xu, XuanZe Wang, ChangLi Wu, Kun-Hong Liu
+Xin-Cheng Wen#, **JiaXin Ye#**, Yan Luo, Yong Xu, XuanZe Wang, ChangLi Wu, Kun-Hong Liu<sup>†</sup>
 
 </div>
 </div>
 
+---
 
-
-## 📖 Educations
+## 🎓 Educations
 
 
 - **Sep 2022 - June 2027:** Ph.D. of Biomedical Engineering, Fudan University, Shanghai, China
