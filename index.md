@@ -14,7 +14,7 @@ Hi! Here is **Jiaxin Ye ([叶嘉鑫]())**. I'm a first-year Ph.D. student majori
 
 ## 🔊 News
 
-- [08/2023] 🏅 1 Happy to win the SIGMM Student Travel Award in MM'23.
+- [08/2023] 🏅 Happy to win the SIGMM Student Travel Award in MM'23.
 - [08/2023] 🍾️ One paper accepted by ACM MM 2023.
 - [07/2023] 🍾️ One paper accepted by ICCV 2023.
 - [02/2023] 🍾️ One paper accepted by ICASSP 2023.
