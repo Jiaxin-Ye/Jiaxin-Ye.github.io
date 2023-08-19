@@ -13,37 +13,48 @@ Here is [my CV](https://caihanlin.com/file/CV-HanlinCAI.pdf).
 
 <br>
 
-## Academic Background
+---
 
-**<font color='red'>[Highlight]</font> I am looking for PhD to start in 2025 Fall. Contact me if you have any leads!**
+## 📌 Publications
 
-- **Sep 2020 - June 2024:** Fuzhou University (BEng)
-- **Sep 2020 - May 2024:** Maynooth University (BSc)
-- **June 2022 - Nov 2022:** Cambridge University (Intern)
-- Expect to apply for a one-year MSc in the UK and will graduate in 2025. Looking for PhD position after MSc!
+- [08/2023] Happy to win the SIGMM Student Travel Award in ACM MM 2023.
+- [08/2023] One paper accepted by ACM MM 2023.
+- [07/2023] One paper accepted by ICCV 2023.
+- [02/2023] One paper accepted by ICASSP 2023.
+- [04/2022] One paper accepted by IJCAI 2022.
+
 
 <br>
 
 ---
 
-## Research Interests
+## 🔊 Recent News
+
+- [08/2023] Happy to win the SIGMM Student Travel Award in ACM MM 2023.
+- [08/2023] One paper accepted by ACM MM 2023.
+- [07/2023] One paper accepted by ICCV 2023.
+- [02/2023] One paper accepted by ICASSP 2023.
+- [04/2022] One paper accepted by IJCAI 2022.
+
+<br>
+
+---
+
+## 📖 Educations
+
+
+- **Sep 2022 - June 2027:** Ph.D. of Biomedical Engineering, Fudan University, Shanghai, China
+- ***Sep 2018 - June 2022:** Bachelor of Intelligent Science and Technology, Xiamen University, Xiamen, China
+
+
+<br>
+
+---
+
+## 🙌🏻 Research Interests
 
 - Industrial IoT System
 - Bluetooth Low Energy
 - Applied Machine Learning
 
 My current research focuses on practical problems that artificial intelligence faces in real life. My interests are on the **Machine Learning** and its applications in **Industrial IoT**. In a word, advanced technologies like ML and IoT positively influence the life of everybody.  I wish to devote my talent to this meaningful cause and bring well-being to society.
-
-<br>
-
----
-
-## News and Updates
-
-- **May 2023：**Happy to be awarded the XiamenAir Scholarship.
-- **May 2023：**Happy to win the Finalist Award in MCM 2023.
-- **Feb 2023：**[**FZU-Flying-Book 福州大学飞跃手册**](https://fzu-fly.online/) has been published!
-- **Jan 2023：**One paper accepted to ICAROB 2023, see you in Japan!
-- **Sep 2022：**Happy to be nominated for the China National Scholarship.
-- **Jun 2022：**Summer Research Intern at Cambridge University, advised by [Prof. Pietro Liò](https://www.cl.cam.ac.uk/~pl219/ ).
-- [Online talk with me.](https://calendly.com/lancecai/meet-with-lance)
