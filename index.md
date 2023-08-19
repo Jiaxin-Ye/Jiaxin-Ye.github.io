@@ -32,7 +32,7 @@ Hi! Here is **Jiaxin Ye ([叶嘉鑫]())**. I'm a first-year Ph.D. student majori
 
 
 - **Sep 2022 - June 2027:** Ph.D. of Biomedical Engineering, Fudan University, Shanghai, China
-- ***Sep 2018 - June 2022:** Bachelor of Intelligent Science and Technology, Xiamen University, Xiamen, China
+- **Sep 2018 - June 2022:** Bachelor of Intelligent Science and Technology, Xiamen University, Xiamen, China
 
 ---
 
