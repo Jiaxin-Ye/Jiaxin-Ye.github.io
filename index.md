@@ -31,6 +31,8 @@ Hi! Here is **Jiaxin Ye ([叶嘉鑫]())**. I'm a first-year Ph.D. student majori
 **Jiaxin Ye**, Yujie Wei, Xin-Cheng Wen, Chenglong Ma, Zhizhong Huang, Kunhong Liu, Hongming Shan
 
 [bib](https://arxiv.org/abs/2308.02190)
+</div>
+</div>
 
 ---
 
@@ -40,6 +42,8 @@ Hi! Here is **Jiaxin Ye ([叶嘉鑫]())**. I'm a first-year Ph.D. student majori
 [Temporal Modeling Matters: A Novel Temporal Emotional Modeling Approach for Speech Emotion Recognition](https://arxiv.org/abs/2211.08233)\\
 **JiaXin Ye**, Xin-Cheng Wen, YuJie Wei, Yong Xu, KunHong Liu, HongMing Shan
 
+</div>
+</div>
 ---
 
 
@@ -49,9 +53,8 @@ Hi! Here is **Jiaxin Ye ([叶嘉鑫]())**. I'm a first-year Ph.D. student majori
 [CTL-MTNet: A Novel CapsNet and Transfer Learning-Based Mixed Task Net for the Single-Corpus and Cross-Corpus Speech Emotion Recognition](https://arxiv.org/abs/2207.10644)\\
 Xin-Cheng Wen#, **JiaXin Ye#**, Yan Luo, Yong Xu, XuanZe Wang, ChangLi Wu, Kun-Hong Liu
 
----
-
-
+</div>
+</div>
 
 </div>
 </div>
