@@ -5,9 +5,7 @@ layout: page
 # 👨🏻‍💻 About Me
 
 <!-- <img src="https://caihanlin.com/caihanlin.jpg" class="floatpic" width="360" height="480"> -->
-
 Welcome! Here is **Jiaxin Ye ([叶嘉鑫]())**.
-
 I'm a first-year Ph.D. student majoring in Biomedical Engineering (*BME*) at ISTBI, Fudan University, advised by [Dr. Shan](http://hmshan.io/). I received my Bachelor degree in Intelligent Science and Technology (*AI*) from Xiamen University in 2022. Here is [my CV](https://caihanlin.com/file/CV-HanlinCAI.pdf).
 
 <br>
