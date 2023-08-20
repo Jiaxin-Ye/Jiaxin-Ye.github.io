@@ -59,7 +59,16 @@
 }
 
 /* 自定义样式：在文字中间加入带有动态文字的方块 */
-.custom-block {
+.pub-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px #efefef solid;
+    padding: 2em 0;
+}
+
+
+.ccf-block {
     position: relative;
     display: inline-block;
     padding: 0.5em 1em; /* 调整方块的内边距 */
@@ -77,4 +86,25 @@
     color: white; /* 调整字体颜色 */
     font-weight: bold;
     vertical-align: middle; /* 垂直居中对齐 */
+}
+
+.pub-box-text {
+    flex-grow: 1; /* Allow text to take available space */
+    /* Add your Markdown text styles here */
+}
+
+@media screen and (max-width: 768px) {
+    .ccf-box {
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: flex-start;
+    }
+
+    .ccf-block {
+        margin-right: 0; /* Reset margin for smaller screens */
+        margin-bottom: 1em;
+    }
+
+    .pub-box-text {
+        width: 100%; /* Full width on smaller screens */
+    }
 }
