@@ -77,18 +77,14 @@
 }
 
 .ccf {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     position: absolute;
-    display: inline-block;
-    padding: 0.5em 1em; /* 调整方块的内边距 */
     margin-top: 0.5em;
     margin-left: -0.5em;
+    color: white;
+    background-color: #053574;
     font-size: 0.8em;
-    background-color: #053574; /* 调整方块的背景颜色 */
-    color: white; /* 调整字体颜色 */
-    font-weight: bold;
-    vertical-align: middle; /* 垂直居中对齐 */
     box-shadow: 3px 3px 6px #787878;
 }
 
