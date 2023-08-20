@@ -19,7 +19,8 @@ title: Publications
 <div class="pub-box-text" markdown="1"> 
 
 [CTL-MTNet: A Novel CapsNet and Transfer Learning-Based Mixed Task Net for the Single-Corpus and Cross-Corpus Speech Emotion Recognition](https://www.ijcai.org/proceedings/2022/0320.pdf)  
-X.C. Wen#, **J. Ye#**, Y. Luo, Y. Xu, X. Wang, C. Wu, K. Liu<sup>†</sup><br>31st International Joint Conference on Artificial Intelligence (IJCAI), Vienna, 2022.
+X.C. Wen#, **J. Ye#**, Y. Luo, Y. Xu, X. Wang, C. Wu, K. Liu<sup>†</sup>
+31st International Joint Conference on Artificial Intelligence (IJCAI), Vienna, 2022.
 
 </div>
 </div>
@@ -31,7 +32,8 @@ X.C. Wen#, **J. Ye#**, Y. Luo, Y. Xu, X. Wang, C. Wu, K. Liu<sup>†</sup><br>31
 <div class="pub-box-text" markdown="1"> 
 
 [AHOA: Adaptively Hybrid Optimization Algorithm for Flexible Job-shop Scheduling Problem](https://link.springer.com/chapter/10.1007/978-3-030-95384-3_18)  
-**J. Ye**, D. Xu, H. Hong, Y. Lai, M Jiang<sup>†</sup><br>21st International Conference on Algorithms and Architectures for Parallel Processing (ICA3PP), Virtual Event, 2021.
+**J. Ye**, D. Xu, H. Hong, Y. Lai, M Jiang<sup>†</sup>
+21st International Conference on Algorithms and Architectures for Parallel Processing (ICA3PP), Virtual Event, 2021.
 
 </div>
 </div>
