@@ -62,23 +62,17 @@
 .custom-block {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    top: -0.0em; /* 调整方块的位置 */
+
     position: relative;
     display: inline-block;
-    padding: 0.1em 0.1em; /* 调整方块的内边距 */
+    padding: 0.1em 0.2em; /* 调整方块的内边距 */
     background-color: #053574; /* 调整方块的背景颜色 */
     color: white; /* 调整字体颜色 */
     font-weight: bold;
 }
 
-.custom-block div::before {
-    position: absolute;
-    top: -0.0em; /* 调整方块的位置 */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #053574; /* 调整字样的背景颜色 */
-    color: white; /* 调整字样的字体颜色 */
-    padding: 0.2em 0.5em; /* 调整字样的内边距 */
-}
+
 .ccf {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -87,5 +81,5 @@
     margin-left: -0.5em;
     color: white;
     background-color: #053574;
-    font-size: 0.8em;
+    font-size: 0.5em;
 }
