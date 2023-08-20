@@ -72,14 +72,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 1em 0;
+    padding: 0.5em 0;
 }
 
 .ccf {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     position: absolute;
-    margin-bottom: -0.5em;
+    margin-bottom: -0.0em;
     margin-left: -0.0em;
     color: white;
     background-color: #053574;
