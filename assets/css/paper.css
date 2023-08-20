@@ -57,3 +57,30 @@
     background-color: #053574;
     font-size: 0.8em;
 }
+
+
+/* 自定义样式：在有序列表项前面嵌入带有 "CCF-A" 字样的方块 */
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.custom-list li::before {
+    content: "CCF-A";
+    position: absolute;
+    left: 0;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: #053574; /* 调整方块的背景颜色 */
+    color: white; /* 调整字体颜色 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
