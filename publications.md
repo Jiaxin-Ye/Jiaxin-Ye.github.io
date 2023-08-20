@@ -25,7 +25,7 @@ J. Ye, D. Xu, H. Hong, Y. Lai, M Jiang, International Conference on Algorithms a
 
 
 <li>
-<div class="ccf-block"><div class="ccf">CCF-C</div></div>
+<div class="ccf-block"><div class="ccf">CCF-A</div></div>
 <div class="pub-box-text" markdown="1"> 
 
 [AHOA: Adaptively Hybrid Optimization Algorithm for Flexible Job-shop Scheduling Problem](https://link.springer.com/chapter/10.1007/978-3-030-95384-3_18)  
