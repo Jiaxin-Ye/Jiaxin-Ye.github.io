@@ -79,6 +79,8 @@
 }
 
 .ccf {
+    width: 200px; /* 设置矩形的宽度为 200 像素 */
+    height: 100px; /* 设置矩形的高度为 100 像素 */
     position: relative;
     display: inline-block;
     padding: 0.5em 1em; /* 调整方块的内边距 */
@@ -90,23 +92,9 @@
     box-shadow: 3px 3px 6px #787878;
 }
 
+
 .pub-box-text {
     flex-grow: 1; /* Allow text to take available space */
     /* Add your Markdown text styles here */
 }
 
-@media screen and (max-width: 768px) {
-    .pub-box {
-        flex-direction: column; /* Stack elements on smaller screens */
-        align-items: flex-start;
-    }
-
-    .ccf-block {
-        margin-right: 0; /* Reset margin for smaller screens */
-        margin-bottom: 1em;
-    }
-
-    .pub-box-text {
-        width: 100%; /* Full width on smaller screens */
-    }
-}
