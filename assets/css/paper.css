@@ -59,7 +59,15 @@
 }
 
 /* 自定义样式：在文字中间加入带有动态文字的方块 */
-/* */
+.custom-block {
+    position: relative;
+    display: inline-block;
+    padding: 0.5em 1em; /* 调整方块的内边距 */
+    background-color: #ffffff; /* 调整方块的背景颜色 */
+    color: white; /* 调整字体颜色 */
+    font-weight: bold;
+    vertical-align: middle; /* 垂直居中对齐 */
+}
 
 .ccf {
     position: relative;
