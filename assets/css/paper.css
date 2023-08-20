@@ -72,7 +72,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0.5em 0;
+    padding: 0.2em 0;
 }
 
 .ccf {
@@ -92,6 +92,7 @@
 
 
 .pub-box-text {
+    margin-top: 1em;
     flex-grow: 1; /* Allow text to take available space */
     /* Add your Markdown text styles here */
 }
