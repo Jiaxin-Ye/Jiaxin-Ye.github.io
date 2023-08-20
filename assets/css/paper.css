@@ -68,7 +68,7 @@
     font-weight: bold;
 }
 
-.custom-block::before {
+.custom-block div::before {
     content: attr(data-text); /* 使用自定义属性中的值作为文字内容 */
     position: absolute;
     top: -1.5em; /* 调整方块的位置 */

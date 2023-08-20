@@ -11,8 +11,11 @@ Lastest Update: 20th Aug 2023&nbsp;
 ## Conference Paper
 
 
-1. <span class="custom-block" data-text="CCF-C"></span> [AHOA: Adaptively Hybrid Optimization Algorithm for Flexible Job-shop Scheduling Problem](https://link.springer.com/chapter/10.1007/978-3-030-95384-3_18)
+1. <div class="custom-block"><div data-text="CCF-C"></div></div>
+[AHOA: Adaptively Hybrid Optimization Algorithm for Flexible Job-shop Scheduling Problem](https://link.springer.com/chapter/10.1007/978-3-030-95384-3_18) 
 J. Ye, D. Xu, H. Hong, Y. Lai, M Jiang, International Conference on Algorithms and Architectures for Parallel Processing (ICA3PP, CCF-C). Cham: Springer International Publishing, 2021: 271-287.
+
+
 
 - [Deep Residual Neural Network for Efficient Traffic Sign Detection](https://caihanlin.com/mypaper/202302ICAROB.pdf)<br>**Hanlin Cai**, Zheng Li, Jiaqi Hu, Wei Hong Lim, Sew Sun Tiang, Mastaneh Mokayef, Chin Hong Wong<br>28th International Conference on Artificial Life and Robotics<br>Beppu, Japan. February, 2023. [Slides](https://caihanlin.com/mypaper/slides/2023-ICAROB-Pre.pdf).<br>
 
