@@ -19,7 +19,7 @@ title: Publications
 <div class="pub-box-text" markdown="1"> 
 
 [Emo-DNA: Emotion Decoupling and Alignment Learning for Cross-Corpus Speech Emotion Recognition](https://arxiv.org/pdf/2211.08233.pdf)  
-**J. Ye**, Y. Wei, X.C. Wen, C. Ma, Z. Huang, K. Liu, H. Shan<sup>†</sup>
+**J. Ye**, Y. Wei, X.C. Wen, C. Ma, Z. Huang, K. Liu, H. Shan<sup>†</sup><br>
 31st ACM International Conference on Multimedia (ACM MM), Canada, 2023.
 
 </div>
@@ -32,7 +32,7 @@ title: Publications
 <div class="pub-box-text" markdown="1"> 
 
 [Online Prototype Learning for Online Continual Learning](https://arxiv.org/pdf/2308.00301.pdf)  
-Y. Wei, **J. Ye**, Z. Huang, J. Zhang, H. Shan<sup>†</sup>
+Y. Wei, **J. Ye**, Z. Huang, J. Zhang, H. Shan<sup>†</sup><br>
 19th International Conference on Computer Vision (ICCV), France, 2023.
 
 </div>
