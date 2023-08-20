@@ -80,7 +80,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     position: absolute;
-    margin-top: 8.em;
+    margin-top: -8.5em;
     margin-left: -0.5em;
     color: white;
     background-color: #053574;
@@ -88,7 +88,6 @@
     box-shadow: 3px 3px 6px #787878;
     font-weight: bold;
     vertical-align: middle;
-    padding: 0.5em 1em; /* 调整方块的内边距 */
 }
 
 
