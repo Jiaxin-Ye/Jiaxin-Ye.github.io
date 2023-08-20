@@ -94,7 +94,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .ccf-box {
+    .pub-box {
         flex-direction: column; /* Stack elements on smaller screens */
         align-items: flex-start;
     }
