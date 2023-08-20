@@ -11,7 +11,7 @@ title: Publications
 ## Conference Paper
 
 
-<ol type="1">
+<ol class="custom-numbered">
 
 <li>
 <div class="pub-box">
@@ -84,7 +84,7 @@ X.C. Wen#, **J. Ye#**, Y. Luo, Y. Xu, X. Wang, C. Wu, K. Liu<sup>†</sup>
 
 ## Journal Paper
 
-<ol type="1">
+<ol class="custom-numbered">
 
 <li>
 <div class="pub-box">

@@ -106,3 +106,7 @@ ol {
 ol li {
     margin-bottom: 10px; /* 调整每个 li 之间的底部间隔 */
 }
+
+ol.custom-numbered {
+    list-style-type: decimal; /* 设置列表项的标志为数字 */
+  }
