@@ -15,7 +15,7 @@ Lastest Update: 20th Aug 2023&nbsp;
 
 <li>
 <div class="pub-box">
-<div class="ccf">CCF-C</div>
+<div class="ccf">CCF-A</div>
 <div class="pub-box-text" markdown="1"> 
 
 [AHOA: Adaptively Hybrid Optimization Algorithm for Flexible Job-shop Scheduling Problem](https://link.springer.com/chapter/10.1007/978-3-030-95384-3_18)  
