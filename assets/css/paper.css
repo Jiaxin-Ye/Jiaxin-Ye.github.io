@@ -58,30 +58,25 @@
     font-size: 0.8em;
 }
 
-/* 自定义样式：在有序列表项前嵌入带有倒序数字和 "CCF-A" 字样的方块 */
-.custom-list {
-    list-style: none;
-    padding-left: 0;
-    counter-reset: custom-counter;
-}
-
-.custom-list li {
+/* 自定义样式：在有序列表项前嵌入倒序数字和 "CCF-A" 字样的方块 */
+/* 自定义样式：在文字中间加入带有 "CCF-A" 字样的方块 */
+.paper-block {
+    display: inline-block;
     position: relative;
-    padding-left: 2em; /* 调整数字和文字距离列表项的距离 */
-    margin-bottom: 0.5em;
-}
-
-.custom-list li::before {
-    content: counter(custom-counter) ". CCF-A";
-    counter-increment: custom-counter;
-    position: absolute;
-    left: 0;
-    width: 1.5em; /* 调整方块的宽度 */
-    height: 1.5em; /* 调整方块的高度 */
+    padding: 0.5em 1em; /* 调整方块的内边距 */
+    margin: 0 0.2em; /* 调整方块的外边距 */
     background-color: #053574; /* 调整方块的背景颜色 */
     color: white; /* 调整字体颜色 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: bold;
+}
+
+.paper-block::before {
+    content: "CCF-A";
+    position: absolute;
+    top: -1.5em; /* 调整方块的位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #053574; /* 调整字样的背景颜色 */
+    color: white; /* 调整字样的字体颜色 */
+    padding: 0.2em 0.5em; /* 调整字样的内边距 */
 }
