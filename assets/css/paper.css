@@ -76,7 +76,6 @@
     color: white; /* 调整字体颜色 */
     font-weight: bold;
     vertical-align: middle; /* 垂直居中对齐 */
-    box-shadow: 3px 3px 6px #787878;
 }
 
 .ccf {
@@ -88,6 +87,7 @@
     color: white; /* 调整字体颜色 */
     font-weight: bold;
     vertical-align: middle; /* 垂直居中对齐 */
+    box-shadow: 3px 3px 6px #787878;
 }
 
 .pub-box-text {
