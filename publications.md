@@ -6,7 +6,6 @@ title: Publications
 
 # Publications
 
-Lastest Update: 20th Aug 2023&nbsp; 
 
 ## Conference Paper
 
