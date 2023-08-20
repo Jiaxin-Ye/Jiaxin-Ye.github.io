@@ -45,7 +45,7 @@ Y. Wei, **J. Ye**, Z. Huang, J. Zhang, H. Shan<sup>†</sup><br>
 <div class="pub-box-text" markdown="1"> 
 
 [Temporal Modeling Matters: A Novel Temporal Emotional Modeling Approach for Speech Emotion Recognition](https://arxiv.org/pdf/2211.08233.pdf)  
-**J. Ye**, X.C. Wen, Y. Wei, Y. Xu, K. Liu<sup>†</sup>, H. Shan<sup>†</sup>
+**J. Ye**, X.C. Wen, Y. Wei, Y. Xu, K. Liu<sup>†</sup>, H. Shan<sup>†</sup><br>
 48th IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Greece, 2023.
 
 </div>
@@ -58,7 +58,7 @@ Y. Wei, **J. Ye**, Z. Huang, J. Zhang, H. Shan<sup>†</sup><br>
 <div class="pub-box-text" markdown="1"> 
 
 [CTL-MTNet: A Novel CapsNet and Transfer Learning-Based Mixed Task Net for the Single-Corpus and Cross-Corpus Speech Emotion Recognition](https://www.ijcai.org/proceedings/2022/0320.pdf)  
-X.C. Wen#, **J. Ye#**, Y. Luo, Y. Xu, X. Wang, C. Wu, K. Liu<sup>†</sup>
+X.C. Wen#, **J. Ye#**, Y. Luo, Y. Xu, X. Wang, C. Wu, K. Liu<sup>†</sup><br>
 31st International Joint Conference on Artificial Intelligence (IJCAI), Vienna, 2022.
 
 </div>
@@ -71,7 +71,7 @@ X.C. Wen#, **J. Ye#**, Y. Luo, Y. Xu, X. Wang, C. Wu, K. Liu<sup>†</sup>
 <div class="pub-box-text" markdown="1"> 
 
 [AHOA: Adaptively Hybrid Optimization Algorithm for Flexible Job-shop Scheduling Problem](https://link.springer.com/chapter/10.1007/978-3-030-95384-3_18)  
-**J. Ye**, D. Xu, H. Hong, Y. Lai, M Jiang<sup>†</sup>
+**J. Ye**, D. Xu, H. Hong, Y. Lai, M Jiang<sup>†</sup><br>
 21st International Conference on Algorithms and Architectures for Parallel Processing (ICA3PP), Virtual Event, 2021.
 
 </div>
@@ -92,7 +92,7 @@ X.C. Wen#, **J. Ye#**, Y. Luo, Y. Xu, X. Wang, C. Wu, K. Liu<sup>†</sup>
 <div class="pub-box-text" markdown="1"> 
 
 [GM-TCNet: Gated Multi-scale Temporal Convolutional Network using Emotion Causality for Speech Emotion Recognition](https://arxiv.org/pdf/2210.15834.pdf)  
-**J. Ye#**, X.C. Wen#, X. Wang, Y. Luo, C. Wu, L. Chen<sup>†</sup>, K. Liu<sup>†</sup>
+**J. Ye#**, X.C. Wen#, X. Wang, Y. Luo, C. Wu, L. Chen<sup>†</sup>, K. Liu<sup>†</sup><br>
 Speech Communication, 2022.
 
 </div>
@@ -105,7 +105,7 @@ Speech Communication, 2022.
 <div class="pub-box-text" markdown="1"> 
 
 [TWACapsNet: a capsule network with two-way attention mechanism for speech emotion recognition](https://link.springer.com/article/10.1007/s00500-023-08957-5)  
-X.C. Wen, K. Liu<sup>†</sup>, Y. Luo, **J. Ye**, L. Chen<sup>†</sup>, 
+X.C. Wen, K. Liu<sup>†</sup>, Y. Luo, **J. Ye**, L. Chen<sup>†</sup><br>
 Soft Computing, 2023.
 
 </div>
