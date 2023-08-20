@@ -59,7 +59,9 @@
 }
 
 /* 自定义样式：在文字中间加入带有动态文字的方块 */
-.custom-block {
+/* */
+
+.ccf {
     position: relative;
     display: inline-block;
     padding: 0.5em 1em; /* 调整方块的内边距 */
@@ -67,26 +69,4 @@
     color: white; /* 调整字体颜色 */
     font-weight: bold;
     vertical-align: middle; /* 垂直居中对齐 */
-}
-
-.custom-block div::before {
-    content: attr(data-text); /* 使用自定义属性中的值作为文字内容 */
-    position: absolute;
-    top: 50%; /* 使方块和文字在垂直方向上对齐 */
-    left: 50%;
-    transform: translate(-50%, -50%); /* 同时在水平和垂直方向上居中对齐 */
-    background-color: #053574; /* 调整字样的背景颜色 */
-    color: white; /* 调整字样的字体颜色 */
-    padding: 0.2em 0.5em; /* 调整字样的内边距 */
-}
-
-.ccf {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: absolute;
-    margin-top: 0.1em;
-    margin-left: -0.1em;
-    color: white;
-    background-color: #053574;
-    font-size: 0.4em;
 }
