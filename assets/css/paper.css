@@ -63,9 +63,11 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     top: -0.0em; /* 调整方块的位置 */
+    left: 50%;
+    transform: translateX(-50%);
     position: relative;
     display: inline-block;
-    padding: 0.1em 0.25em; /* 调整方块的内边距 */
+    padding: 0.2em 0.5em; /* 调整方块的内边距 */
     font-weight: bold;
 }
 
