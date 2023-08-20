@@ -10,7 +10,7 @@ title: Publications
 ## Conference Paper
 
 
-<ol>
+<ol type="1">
 
 <li>
 <div class="pub-box">
