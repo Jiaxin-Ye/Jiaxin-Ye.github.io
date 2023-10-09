@@ -16,8 +16,8 @@ Hi! Here is **Jiaxin Ye ([叶嘉鑫]())**. I'm a first-year Ph.D. student majori
 
 - [08/2023] 🏅 Happy to win the SIGMM Student Travel Grant Award in MM'23.
 - [08/2023] 🍾️ One paper accepted by ACM MM 2023.
-- [07/2023] 🍾️ Congrats to Yujie. One paper accepted by ICCV 2023.
-- [07/2023] 🍾️ Congrats to Xin-Cheng. One paper accepted by Soft Computing.
+- [07/2023] 🍾️ Congrats Yujie. One paper accepted by ICCV 2023.
+- [06/2023] 🍾️ Congrats Xin-Cheng. One paper accepted by Soft Computing.
 - [02/2023] 🍾️ One paper accepted by ICASSP 2023.
 - [07/2022] 🍾️ One paper accepted by Speech Communication.
 - [04/2022] 🍾️ One paper accepted by IJCAI 2022.
