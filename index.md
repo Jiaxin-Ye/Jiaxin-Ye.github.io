@@ -14,7 +14,7 @@ Hi! Here is **Jiaxin Ye ([叶嘉鑫]())**. I'm a first-year Ph.D. student majori
 
 ## 🔊 News
 
-- [11/2023] 🍾️ Congrats Xin-Cheng. One paper accepted by IEEE Trans. Softw. Eng.
+- [11/2023] 🍾️ Congrats Xin-Cheng. One paper accepted by *IEEE* T-SE.
 - [08/2023] 🏅 Happy to win the SIGMM Student Travel Grant Award in MM'23.
 - [08/2023] 🍾️ One paper accepted by ACM MM 2023.
 - [07/2023] 🍾️ Congrats Yujie. One paper accepted by ICCV 2023.
