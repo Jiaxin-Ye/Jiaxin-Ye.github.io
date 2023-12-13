@@ -88,6 +88,19 @@ X.C. Wen#, **J. Ye#**, Y. Luo, Y. Xu, X. Wang, C. Wu, K. Liu<sup>†</sup><br>
 
 <li>
 <div class="pub-box">
+<div class="ccf-block"><div class="ccf"> CCF-A </div></div>
+<div class="pub-box-text" markdown="1"> 
+
+[Meta-Path Based Attentional Graph Learning Model for Vulnerability Detection](https://arxiv.org/pdf/2212.14274)  
+XC. Wen, C. Gao<sup>†</sup>, **J. Ye**, Y. Li, Z Tian, Y. Jia, X Wang<br>
+IEEE Transactions on Software Engineering (TSE), 2023.
+
+</div>
+</div>
+</li>
+
+<li>
+<div class="pub-box">
 <div class="ccf-block"><div class="ccf"> CCF-B </div></div>
 <div class="pub-box-text" markdown="1"> 
 
