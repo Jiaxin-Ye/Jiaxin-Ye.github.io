@@ -14,6 +14,7 @@ Hi! Here is **Jiaxin Ye ([叶嘉鑫]())**. I'm a first-year Ph.D. student majori
 
 ## 🔊 News
 
+- [12/2023] 🎉 Check out our [Repo](https://github.com/ddlBoJack/emotion2vec) for ***emotion2vec***, the first universal speech emotion representation model.
 - [11/2023] 🍾️ Congrats Xin-Cheng. One paper accepted by *IEEE* TSE.
 - [08/2023] 🏅 Happy to win the SIGMM Student Travel Grant Award in MM'23.
 - [08/2023] 🍾️ One paper accepted by ACM MM 2023.
