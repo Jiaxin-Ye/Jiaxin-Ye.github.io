@@ -8,6 +8,27 @@ title: Publications
 
 ---
 
+## Pre-print Paper
+
+<ol class="custom-numbered">
+
+<li>
+<div class="pub-box">
+<div class="ccf-block"><div class="ccf"> Arxiv </div></div>
+<div class="pub-box-text" markdown="1"> 
+
+[emotion2vec: Self-Supervised Pre-Training for Speech Emotion Representation](https://arxiv.org/pdf/2312.15185.pdf)  
+Z. Ma, Z. Zheng, **J. Ye**, J. Li, Z. Gao, S, Zhang, X. Chen<sup>†</sup>, *preprint*, 2024.
+
+</div>
+</div>
+</li>
+
+
+</ol>
+
+---
+
 ## Conference Paper
 
 
