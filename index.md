@@ -26,7 +26,7 @@ Hi! Here is **Jiaxin Ye ([叶嘉鑫]())**. I'm a first-year Ph.D. student majori
 
 ---
 
-## 📚 Publications
+## 📚 Selected Publications
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2023</div><img src='images/mm23.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
