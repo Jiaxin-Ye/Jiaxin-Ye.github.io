@@ -81,4 +81,4 @@ Xin-Cheng Wen#, **JiaXin Ye#**, Yan Luo, Yong Xu, XuanZe Wang, ChangLi Wu, Kun-H
 
 
 - Journal Reviewer of IEEE T-NNLS.
-- Conference Reviewer of ACM MM 2024, ICASSP 2024.
+- Conference Reviewer of ACM MM 2024, ICASSP 2024, INTERSPEECH 2024.
