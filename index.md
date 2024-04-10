@@ -80,5 +80,5 @@ Xin-Cheng Wen#, **JiaXin Ye#**, Yan Luo, Yong Xu, XuanZe Wang, ChangLi Wu, Kun-H
 ## ✍🏻 Services
 
 
-- Journal Reviewer of IEEE T-NNLS.
+- Journal Reviewer of IEEE T-NNLS, CAAI Transactions on Intelligence Technology.
 - Conference Reviewer of ACM MM 2024, ICASSP 2024, INTERSPEECH 2024.
