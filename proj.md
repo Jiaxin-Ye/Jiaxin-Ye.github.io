@@ -20,7 +20,7 @@ title: Projects
   
   [Diff-Dolly: Multimedia Personalized Cloning with Multimodal-consistent 4D Diffusion Model]( )\\
 **Jiaxin Ye**, Boyuan Cao, Qi Gao, Xin-Cheng Wen, Ziyang Ma, Yiwei Guo, Hongming Shan<sup>†</sup>\\
-   [[arxiv]( )] [[project](https://jiaxin-ye.github.io/projs/diffdolly)] [[code]( )] [[bib](https://jianxgao.github.io/projs/diffdolly/#BibTeX)]
+   [[arxiv]( )] [[project](https://jiaxin-ye.github.io/proj/diffdolly)] [[code]( )] [[bib](https://jianxgao.github.io/proj/diffdolly/#BibTeX)]
   </div>
 </div>
 
