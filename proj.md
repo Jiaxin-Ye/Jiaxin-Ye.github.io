@@ -11,7 +11,10 @@ title: Projects
 
 <ol class="custom-numbered">
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2023</div><img src='images/mm23.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='projs/diffdolly/src/proj.png' alt="sym" width="100%"></div></div> -->
+
+ <img src="projs/diffdolly/src/proj.png" width="100%"/>
+
 <div class='paper-box-text' markdown="1">
 
 [Diff-Dolly: Multimedia Personalized Cloning with Multimodal-consistent 4D Diffusion Model]( )\\
