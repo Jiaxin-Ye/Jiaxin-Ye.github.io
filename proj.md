@@ -11,7 +11,7 @@ title: Projects
 
 <ol class="custom-numbered">
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='projs/diffdolly/src/proj.png' alt="sym" width="100%"></div></div> -->
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='projs/diffdolly/src/proj.png' alt="sym" width="70%"></div></div> -->
 
 
 <div class='paper-box'>
