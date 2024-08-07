@@ -16,7 +16,7 @@ title: Projects
 
 
 <div class='paper-box-text' markdown="1">
-<img src="projs/diffdolly/src/proj.png" width="100%"/>
+<img src="/diffdolly/src/proj.png" width="100%"/>
 
 [Diff-Dolly: Multimedia Personalized Cloning with Multimodal-consistent 4D Diffusion Model]( )\\
 **Jiaxin Ye**, Boyuan Cao, Qi Gao, Xin-Cheng Wen, Ziyang Ma, Yiwei Guo, Hongming Shan<sup>†</sup>\\
