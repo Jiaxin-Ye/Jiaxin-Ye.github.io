@@ -10,8 +10,7 @@ title: Publications
 
 ## Pre-print Paper
 
-
-
+<ol class="custom-numbered">
 </ol>
 
 ---
@@ -73,8 +72,6 @@ X.C. Wen#, **J. Ye#**, Y. Luo, Y. Xu, X. Wang, C. Wu, K. Liu<sup>†</sup><br>
 </div>
 </li>
 
-
-<ol class="custom-numbered">
 
 <li>
 <div class="pub-box">
