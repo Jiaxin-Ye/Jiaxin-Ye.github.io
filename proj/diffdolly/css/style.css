@@ -190,3 +190,63 @@ mark {
   color: #0a73d5; /* 文本颜色为黑色 */
   font-weight: bold
 }
+
+.video-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.video-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-label {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.slider-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.slider-container {
+  width: 100%;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.score-label {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  width: 200px;
+  margin-top: 15px;
+  margin-bottom: -10px;
+}
+
+.score-name-label {
+  color: rgb(71, 117, 200);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  width: 250px;
+  margin-top: 15px;
+  margin-bottom: -10px;
+}
