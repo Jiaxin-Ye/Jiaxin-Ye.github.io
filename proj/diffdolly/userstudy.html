@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/user.css">
+    
     <link rel="icon" href="./images/favicon.svg">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -97,17 +99,14 @@
         <div class="subcontent">
             <div class="video-container">
                 <h4 class="video-label">Demo 1: GT is real video, A&B&C</h4>
-                <video controls width="100%">
+                <video controls width="60%">
                     <source src="/Users/yejiaxin/Downloads/test.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-            
-               <!-- MOS 评分行 --
 
                 <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
                 <div class="slider-row">
 
-                    <!-- <score class="score-name-label">MOS</score> -->
                     <div class="slider-container">
                         <span id="ours-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
                         <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-mos-id1" name="ours_mos" oninput="updateScoreLabel('ours-mos-id1', 'ours-mos-label-id1')">
