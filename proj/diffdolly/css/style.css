@@ -1,11 +1,15 @@
 /* CSS Document */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+
 body {
-  font-family: 'Open-Sans', sans-serif;
+  font-family: 'Open-Sans', sans-serif, ;
   font-weight: 300;
   background-color: #fff;
 }
+
+
+
 .content {
   width: 1000px;
   padding: 25px 50px;
@@ -15,6 +19,17 @@ body {
   border-radius: 15px;
   font-family: "Google Sans";
 }
+
+.subcontent {
+  width: 100%;
+  padding: 12px;
+  margin: 10px auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 8px #ccc;
+  border-radius: 10px;
+  font-family: 'Google Sans', sans-serif;
+}
+
 .contentblock {
   width: 950px;
   margin: 0 auto;
@@ -149,4 +164,29 @@ p code {
 }
 .spacertd {
   width: 40px;
+}
+
+button[type="submit"] {
+  background-color: #007BFF; /* 蓝色背景 */
+  color: white; /* 白色文字 */
+  padding: 10px 20px; /* 内边距 */
+  font-size: 16px; /* 字体大小 */
+  border: none; /* 无边框 */
+  border-radius: 5px; /* 圆角 */
+  cursor: pointer; /* 鼠标指针 */
+  transition: background-color 0.3s ease; /* 背景色过渡效果 */
+  display: block;
+  margin: 20px auto; /* 置于中央 */
+  text-align: center;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* 悬停时背景色 */
+}
+
+
+mark {
+  background-color: #fffac1; /* 背景颜色为黄色 */
+  color: #0a73d5; /* 文本颜色为黑色 */
+  font-weight: bold
 }

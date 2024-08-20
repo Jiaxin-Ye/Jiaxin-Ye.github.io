@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>User Study</title>
+    <link href="./css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="stylesheet" href="./css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./images/favicon.svg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    
+    <script defer src="./js/fontawesome.all.min.js"></script>
+    <script src="./js/bulma-carousel.min.js"></script>
+    <script src="./js/bulma-slider.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+            startup: {
+                renderer: 'svg'
+              }
+        });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+<style>
+  .video-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.video-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-label {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.slider-container {
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 80%;
+    margin-right: 10px;
+}
+
+.score-label {
+    font-weight: bold;
+    text-align: center;
+    width: 180px;
+    margin-top: 15px;
+    margin-bottom: -10px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="content">
+    <h1><strong>MOS Scoring Questionnaire</strong></h1>
+    <p id="tldr">
+        Please evaluate the following videos based on their naturalness and lip synchronization accuracy.
+    </p>
+
+    <h2>Scoring Guidelines</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Level</th>
+                <th>Value</th>
+                <th>Video MOS Description</th>
+                <th>SyncMOS Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Excellent</td>
+                <td>5</td>
+                <td>Clear and Natural: The video is extremely clear, natural, and smooth, with rich details and no noticeable artifacts. Quality is acceptable.</td>
+                <td>Highly Synchronized: Lip movements match the audio perfectly, with no delay or misalignment. It feels natural, and the quality is acceptable.</td>
+            </tr>
+            <tr>
+                <td>Good</td>
+                <td>4</td>
+                <td>Mostly Clear: The video is generally clear, with occasional slight artifacts that have minimal impact. Quality is decent.</td>
+                <td>Mostly Synchronized: The synchronization is generally good, with minor delays occasionally, but overall impact is minimal. Quality is decent.</td>
+            </tr>
+            <tr>
+                <td>Fair</td>
+                <td>3</td>
+                <td>Moderately Clear: The video clarity is average, with noticeable artifacts and some loss of detail. Quality is mediocre.</td>
+                <td>Moderate Synchronization: Synchronization is average, with noticeable delays or misalignment that require adjustment. Quality is average.</td>
+            </tr>
+            <tr>
+                <td>Bad</td>
+                <td>2</td>
+                <td>Low Clarity: The video has low clarity, significant artifacts, and blurred details. Quality is poor.</td>
+                <td>Poorly Synchronized: Synchronization is poor, with clear delays affecting the viewing experience. Quality is subpar.</td>
+            </tr>
+            <tr>
+                <td>Poor</td>
+                <td>1</td>
+                <td>Highly Blurred: The video is extremely blurred, with severe artifacts and almost no visible details. Quality is unacceptable.</td>
+                <td>Severely Unsynchronized: Synchronization is severely off, with significant delays. The viewing experience is very poor, and the quality is unacceptable.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="content">
+    <h2>Please score based on the naturalness and lip sync of the overall video</h2>
+    <form id="user-study-form">
+        <div class="subcontent">
+            <div class="video-row">
+                <div class="video-container">
+                    <h5 class="video-label">GT vs Ours:</h5>
+                    <video controls width="100%">
+                        <source src="/Users/yejiaxin/Downloads/test.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <span id="ours-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-mos-id1" name="ours-mos-id1" oninput="updateScoreLabel('ours-mos-id1', 'ours-mos-label-id1')">
+                        
+                    </div>
+                </div>
+    
+                <div class="video-container">
+                    <h5 class="video-label">GT vs TalkLip:</h5>
+                    <video controls width="100%">
+                        <source src="/Users/yejiaxin/Downloads/test.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <span id="talklip-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-mos-id1" name="talklip-mos-id1" oninput="updateScoreLabel('talklip-mos-id1', 'talklip-mos-label-id1')">
+                        
+                    </div>
+                </div>
+    
+                <div class="video-container">
+                    <h5 class="video-label">GT vs IP-LAP:</h5>
+                    <video controls width="100%">
+                        <source src="/Users/yejiaxin/Downloads/test.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <span id="iplap-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-mos-id1" name="iplap-mos-id1" oninput="updateScoreLabel('iplap-mos-id1', 'iplap-mos-label-id1')">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    
+</div>
+
+
+<div class="content">
+    <p>
+        This questionnaire is part of a research study and your responses will be anonymized.
+    </p>
+</div>
+<script>
+    function updateScoreLabel(sliderId, labelId) {
+        const slider = document.getElementById(sliderId);
+        const label = document.getElementById(labelId);
+        const value = slider.value;
+        let level = '';
+
+        if (value <= 1) {
+            level = 'Poor';
+        } else if (value <= 2) {
+            level = 'Bad';
+        } else if (value <= 3) {
+            level = 'Fair';
+        } else if (value <= 4) {
+            level = 'Good';
+        } else {
+            level = 'Excellent';
+        }
+
+        label.textContent = `Score: ${value} (${level})`;
+    }
+
+    document.getElementById('user-study-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const subcontents = document.querySelectorAll('.subcontent');
+        const rows = [];
+
+        subcontents.forEach((subcontent, index) => {
+            const oursScore = subcontent.querySelector('#ours-mos-id1').value;
+            const talklipScore = subcontent.querySelector('#talklip-mos-id1').value;
+            const iplapScore = subcontent.querySelector('#iplap-mos-id1').value;
+
+            rows.push({
+                'Subcontent': `Subcontent ${index + 1}`,
+                'Ours Score': oursScore,
+                'TalkLip Score': talklipScore,
+                'IP-LAP Score': iplapScore
+            });
+        });
+
+        console.log('Rows:', rows); // Debugging output to ensure data is collected correctly
+
+        const worksheet = XLSX.utils.json_to_sheet(rows);
+        const workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, worksheet, 'Results');
+
+        // Export to Excel file
+        XLSX.writeFile(workbook, './user_study_results.xlsx');
+
+        alert('Form submitted! Your results have been saved.');
+    });
+</script>
+</body>
+
+</html>
