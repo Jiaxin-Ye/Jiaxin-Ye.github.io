@@ -79,8 +79,19 @@ button[type="submit"] {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
-    width: 250px;
+    width: 300px;
     margin-top: 15px;
     margin-bottom: -10px;
   }
   
+
+  .small-audio-player {
+    width: 240px; /* 调整宽度 */
+    height: 40px; /* 调整高度 */
+}
+
+
+.normal-audio-player {
+  width: 400px; /* 调整宽度 */
+  height: 40px; /* 调整高度 */
+}

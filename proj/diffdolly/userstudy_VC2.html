@@ -38,57 +38,57 @@
 
 <body>
 <div class="content">
-    <h1><strong>Lip Motion Cloning User Study</strong></h1>
+    <h1><strong>Voice Cloning User Study</strong></h1>
     <p id="tldr">
-        Please evaluate the following videos based on their <mark>naturalness and lip synchronization accuracy</mark> with Ground Truth.<br>
-        请与真实视频（GT）对比，从<mark>自然度和口型同步准确度</mark>两个维度对结果进行评估。
+        Please evaluate the following speeches based on their <mark>naturalness and voice similarity</mark> with reference voice.<br>
+        请与参考声音对比，从<mark>自然度和声色相似度</mark>两个维度对结果进行评估。
     </p>
 
     <h2>Scoring Guidelines 打分指引</h2>
     <p id="tldr">
-        Please read the following scoring criteria first. You will rate each video demo given below (i.e., the difference between the video of different methods and the real video) from 1 to 5 points. <mark>The higher the score, the better the quality and the stronger the synchronization.</mark>
+        Please read the following scoring criteria first. You will rate each voice demo given below (i.e., the difference between the speech of different methods and the reference voice) from 1 to 5 points. <mark>The higher the score, the better the quality and the stronger the synchronization.</mark>
         <br>
-        请您先阅读以下评分标准，你将对以下给出的每一个视频demo（即对比不同方法的视频和真实视频的差异）做出1-5分的打分，<mark>分数越高表示质量越好，同步性越强。</mark>
+        请您先阅读以下评分标准，你将对以下给出的每一个音频demo（即对比不同方法的音频和真实音频的差异）做出1-5分的打分，<mark>分数越高表示质量越好，声色越相似。</mark>
     </p>
     <table>
         <thead>
             <tr>
                 <th>Level</th>
                 <th>Value</th>
-                <th>Video MOS Description</th>
-                <th>SyncMOS Description</th>
+                <th>Speech MOS Description</th>
+                <th>VMOS Description</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>Excellent<br>优</td>
                 <td>5</td>
-                <td>Clear and Natural: The video is extremely clear, natural, and smooth, with rich details and no noticeable artifacts. Quality is acceptable.<br>清晰自然： 视频画面非常清晰，自然流畅，细节丰富，无明显伪影。质量可接受。</td>
-                <td>Highly Synchronized: Lip movements match the audio perfectly, with no delay or misalignment. It feels natural, and the quality is acceptable.<br>高度同步： 唇部运动与语音高度一致，无延迟或错位，感觉自然，质量可接受。</td>
+                <td>Natural and Clear: The speech is natural, smooth, and clear with no rhythm or semantic issues. Easy to understand, quality is high.<br>自然清晰：语音自然、流畅、清晰，无节奏或语义问题。理解容易，质量很高。</td>
+                <td> Highly Similar: The generated speech closely matches the target's voice, with consistent tone, timbre, and rhythm. Difficult to distinguish between the two. <br>高度相似：生成的语音与目标声音高度匹配，音调、音色和节奏一致。难以区分两者。</td>
             </tr>
             <tr>
                 <td>Good<br>良</td>
                 <td>4</td>
-                <td>Mostly Clear: The video is generally clear, with occasional slight artifacts that have minimal impact. Quality is decent.<br>基本清晰： 视频整体清晰度较好，偶有轻微伪影，影响不大。质量尚可。</td>
-                <td>Mostly Synchronized: The synchronization is generally good, with minor delays occasionally, but overall impact is minimal. Quality is decent.<br>基本同步： 同步性较好，偶有轻微延迟，但整体影响不大。质量尚可。</td>
+                <td>Minor Issues: Speech is mostly clear, with minor rhythm issues. Quality is acceptable. <br> 轻微问题：语音基本清晰，偶有轻微节奏问题。质量尚可接受。</td>
+                <td> Fairly Similar: The generated speech is similar to the target's voice, with minor differences in tone and rhythm..<br> 相当相似：生成的语音与目标声音相似，音调和节奏上有些许差异。整体相似度较高。 </td>
             </tr>
             <tr>
                 <td>Fair<br>合格</td>
                 <td>3</td>
-                <td>Moderately Clear: The video clarity is average, with noticeable artifacts and some loss of detail. Quality is mediocre.<br>中等清晰： 视频清晰度一般，伪影明显，细节有所缺失。质量中等。</td>
-                <td>Moderate Synchronization: Synchronization is average, with noticeable delays or misalignment that require adjustment. Quality is average.<br>同步一般： 同步性一般，存在明显延迟或错位，需要适应。质量普通。</td>
+                <td>Noticeable Flaws: Speech is somewhat unnatural, with noticeable errors and noise. Requires effort to understand, quality is average.<br>明显缺陷：语音有些不自然，存在明显错误和噪音。理解需要努力，质量一般。</td>
+                <td>Moderately Similar: The generated speech has some similarity to the target's voice, but differences in tone and rhythm are evident.<br>中等相似：生成的语音与目标声音有一定相似度，但音调和节奏差异明显。</td>
             </tr>
             <tr>
                 <td>Bad<br>差</td>
                 <td>2</td>
-                <td>Low Clarity: The video has low clarity, significant artifacts, and blurred details. Quality is poor.清晰度低： 视频清晰度较低，伪影显著，画面模糊，细节难以辨认。质量较差。<br></td>
-                <td>Poorly Synchronized: Synchronization is poor, with clear delays affecting the viewing experience. Quality is subpar.<br>同步较差： 同步性差，延迟明显，影响观看体验。质量不佳。</td>
+                <td>Hard to Understand: Speech is disfluent, with abnormal rhythm and unclear words. Hard to understand, quality is low.<br>难以理解：语音不流畅，节奏异常，大部分词语不清晰。理解困难，质量较低。</td>
+                <td>Low Similarity: The generated speech differs significantly from the target's voice, with only a few matching features.<br>低相似度：生成的语音与目标声音差异显著，仅在少数特征上相似。</td>
             </tr>
             <tr>
                 <td>Poor<br>劣</td>
                 <td>1</td>
-                <td>Highly Blurred: The video is extremely blurred, with severe artifacts and almost no visible details. Quality is unacceptable.<br>严重模糊： 视频极为模糊，伪影严重，几乎没有细节。质量不可接受。</td>
-                <td>Severely Unsynchronized: Synchronization is severely off, with significant delays. The viewing experience is very poor, and the quality is unacceptable.<br>严重不同步： 同步性严重不良，延迟显著。观感极差，质量无法接受。</td>
+                <td>Unintelligible: Speech is very unclear, disfluent, and nearly incomprehensible. Quality is unacceptable.<br> 无法辨识：语音非常不清晰，不流畅，几乎无法理解。质量不可接受。</td>
+                <td>Barely Similar: The generated speech bears little resemblance to the target's voice, with distinct differences in tone and rhythm. <br> 几乎不相似：生成的语音与目标声音几乎没有相似之处，音调和节奏差异明显。</td>
             </tr>
         </tbody>
     </table>
@@ -96,21 +96,47 @@
 <div class="content">
     <h1><strong>Start Scoring!</strong></h1>
     <p id="tldr">
-        Please score <mark>3 methods (A, B, C)</mark> based on the naturalness and lip sync. GT is a real video for reference.<br>
-        请根据自然度和口型同步对<mark>三种方法（A、B、C）</mark>进行评分。GT是仅供参考的真实视频。
+        Before rating each method, please listen to the reference speech first, then click on the audio of A/B/C to rate the <mark>three randomly shuffled methods (A, B, C)</mark> based on naturalness and voice similarity.<br>
+        对每个方法评分前，请先倾听一遍参考音频，然后点击A/B/C的音频，<mark>理想情况下生成的音频语义要和文本一致、声色要和参考音频一致</mark>。根据自然度和声色相似度对<mark>三种随机打乱的方法（A、B、C）</mark>进行评分。
     </p>
 
    
     <form id="user-study-form">
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 1</strong>: We have the tools but we lack the collective will and momentum (English)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/vhVWzkbAW4I_0006-En.mp4" type="video/mp4">
+                <p id="tldr" style="font-size: 18px;"><strong>Demo 1</strong>: <mark>and so one of the major challenges of our project really is to find photographs that were taken before something </mark>(English)</p>
 
-                </video>
+                <div>
+                    <p style="text-align: center;">Reference Speeech 参考音频（提供声色参考）:</p>
+                    <audio controls class="normal-audio-player">
+                        <source src="./data/VC/VC_reference/0ZfSOArXbGQ_0002-ref.wav" type="audio/wav">
+                    </audio>
+                </div>
 
-                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div class="slider-row">
+                    <div>
+                        <p style="text-align: center;">A</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/our/0ZfSOArXbGQ_0002-our-En.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div>
+                        <p style="text-align: center;">B</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/hpm/0ZfSOArXbGQ_0002-hpm-En.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div>
+                        <p style="text-align: center;">C</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/vits/0ZfSOArXbGQ_0002-vits-En.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <score class="score-name-label">Speech MOS (Naturalness, 语音清晰度)</score>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -133,7 +159,7 @@
                 </div>
 
                 <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <span class="score-name-label">VMOS (Voice Similarity, 声色相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -153,16 +179,42 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 2</strong>: Show abuse the light of day by talking about it with your children your coworkers your friends and (English)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/V1yW5IsnSjo_0006-En.mp4" type="video/mp4">
+                <p id="tldr" style="font-size: 18px;"><strong>Demo 2</strong>: <mark>she wanted to change policy at the government level </mark>(English)</p>
 
-                </video>
-                <!-- 评分部分与 Demo 1 相同 -->
-                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div>
+                    <p style="text-align: center;">Reference Speeech 参考音频（提供声色参考）:</p>
+                    <audio controls class="normal-audio-player">
+                        <source src="./data/VC/VC_reference/SpTGUTSFvf4_0002-ref.wav" type="audio/wav">
+                    </audio>
+                </div>
+
+                <div class="slider-row">
+                    <div>
+                        <p style="text-align: center;">A</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/our/SpTGUTSFvf4_0002-our-En.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div>
+                        <p style="text-align: center;">B</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/hpm/SpTGUTSFvf4_0002-hpm-En.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div>
+                        <p style="text-align: center;">C</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/vits/SpTGUTSFvf4_0002-vits-En.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <score class="score-name-label">Speech MOS (Naturalness, 语音清晰度)</score>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -185,7 +237,7 @@
                 </div>
 
                 <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <span class="score-name-label">VMOS (Voice Similarity, 声色相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -208,13 +260,40 @@
         
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 3</strong>: Texting has a one hundred percent open rate (English)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/LiUClSItcy0_0000-En.mp4" type="video/mp4">
+                <p id="tldr" style="font-size: 18px;"><strong>Demo 3</strong>: <mark>and when i look at the criminal justice system in the united states today i feel the exact same way that i did about the state of </mark>(English)</p>
 
-                </video>
-                <!-- 评分部分与 Demo 1 相同 -->
-                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div>
+                    <p style="text-align: center;">Reference Speeech 参考音频（提供声色参考）:</p>
+                    <audio controls class="normal-audio-player">
+                        <source src="./data/VC/VC_reference/ZJNESMhIxQ0_0014-ref.wav" type="audio/wav">
+                    </audio>
+                </div>
+
+                <div class="slider-row">
+                    <div>
+                        <p style="text-align: center;">A</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/our/ZJNESMhIxQ0_0014-our-En.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                    
+                    <div>
+                        <p style="text-align: center;">B</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/vits/ZJNESMhIxQ0_0014-vits-En.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div>
+                        <p style="text-align: center;">C</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/hpm/ZJNESMhIxQ0_0014-hpm-En.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                </div>
+
+                <score class="score-name-label">Speech MOS (Naturalness, 语音清晰度)</score>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -237,7 +316,7 @@
                 </div>
 
                 <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <span class="score-name-label">VMOS (Voice Similarity, 声色相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -257,16 +336,43 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 4</strong>: I realize of course that all countries are unique (English)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/TScetimMBL8_0000-En.mp4" type="video/mp4">
+                <p id="tldr" style="font-size: 18px;"><strong>Demo 4</strong>: <mark>it's a fucking orgy </mark>(English)</p>
 
-                </video>
-                <!-- 评分部分与 Demo 1 相同 -->
-                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div>
+                    <p style="text-align: center;">Reference Speeech 参考音频（提供声色参考）:</p>
+                    <audio controls class="normal-audio-player">
+                        <source src="./data/VC/VC_reference/zuYzOn0U2PY_0000-ref.wav" type="audio/wav">
+                    </audio>
+                </div>
+
+                <div class="slider-row">
+                    <div>
+                        <p style="text-align: center;">A</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/our/zuYzOn0U2PY_0000-our-En.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                    
+                    <div>
+                        <p style="text-align: center;">B</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/vits/zuYzOn0U2PY_0000-vits-En.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div>
+                        <p style="text-align: center;">C</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/hpm/zuYzOn0U2PY_0000-hpm-En.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                </div>
+
+                <score class="score-name-label">Speech MOS (Naturalness, 语音清晰度)</score>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -289,7 +395,7 @@
                 </div>
 
                 <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <span class="score-name-label">VMOS (Voice Similarity, 声色相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -309,16 +415,46 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 5</strong>: You are a healer in a stone age village (English)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/fIICVeGW4RY_0000-En.mp4" type="video/mp4">
+                <p id="tldr" style="font-size: 18px;"><strong>Demo 5</strong>: <mark>and i have to tell you i'm passionate about data </mark>(English)</p>
 
-                </video>
-                <!-- 评分部分与 Demo 1 相同 -->
-                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div>
+                    <p style="text-align: center;">Reference Speeech 参考音频（提供声色参考）:</p>
+                    <audio controls class="normal-audio-player">
+                        <source src="./data/VC/VC_reference/Li4S1yyrsTI_0002-ref.wav" type="audio/wav">
+                    </audio>
+                </div>
+
+                <div class="slider-row">
+
+                    <div>
+                        <p style="text-align: center;">A</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/vits/Li4S1yyrsTI_0002-vits-En.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+
+                    <div>
+                        <p style="text-align: center;">B</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/our/Li4S1yyrsTI_0002-our-En.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                    
+
+                    <div>
+                        <p style="text-align: center;">C</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/hpm/Li4S1yyrsTI_0002-hpm-En.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                </div>
+
+                <score class="score-name-label">Speech MOS (Naturalness, 语音清晰度)</score>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -341,7 +477,7 @@
                 </div>
 
                 <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <span class="score-name-label">VMOS (Voice Similarity, 声色相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -361,16 +497,45 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 6</strong>: Dann schalten wir unseren körperchronisch auf alarmstufe rot. (German)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/WhcvAXG-lcU_0122-De.mp4" type="video/mp4">
+                <p id="tldr" style="font-size: 18px;"><strong>Demo 6</strong>: <mark>хотя, может быть, и интересует,но это очень много времени займёт </mark>(Russian)</p>
 
-                </video>
-                <!-- 评分部分与 Demo 1 相同 -->
-                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div>
+                    <p style="text-align: center;">Reference Speeech 参考音频（提供声色参考）:</p>
+                    <audio controls class="normal-audio-player">
+                        <source src="./data/VC/VC_reference/B0f6kt4rnpM_0007-ref.wav" type="audio/wav">
+                    </audio>
+                </div>
+
+                <div class="slider-row">
+
+                    <div>
+                        <p style="text-align: center;">A</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/vits/B0f6kt4rnpM_0007-vits-Ru.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                    
+
+                    <div>
+                        <p style="text-align: center;">B</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/hpm/B0f6kt4rnpM_0007-hpm-Ru.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div>
+                        <p style="text-align: center;">C</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/our/B0f6kt4rnpM_0007-our-Ru.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                </div>
+
+                <score class="score-name-label">Speech MOS (Naturalness, 语音清晰度)</score>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -393,7 +558,7 @@
                 </div>
 
                 <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <span class="score-name-label">VMOS (Voice Similarity, 声色相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -413,16 +578,46 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 7</strong>: Un poderoso instrumentode exclusión social. (Spanish)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/U0bRlf7xmYs_0056-Es.mp4" type="video/mp4">
+                <p id="tldr" style="font-size: 18px;"><strong>Demo 7</strong>: <mark>qui est un peu - si je prenais un exemple lié à la mécanique </mark>(French)</p>
 
-                </video>
-                <!-- 评分部分与 Demo 1 相同 -->
-                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div>
+                    <p style="text-align: center;">Reference Speeech 参考音频（提供声色参考）:</p>
+                    <audio controls class="normal-audio-player">
+                        <source src="./data/VC/VC_reference/tTcrwOjAo30_0050-ref.wav" type="audio/wav">
+                    </audio>
+                </div>
+
+                <div class="slider-row">
+
+        
+                    <div>
+                        <p style="text-align: center;">A</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/our/tTcrwOjAo30_0050-our-Fr.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div>
+                        <p style="text-align: center;">B</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/vits/tTcrwOjAo30_0050-vits-Fr.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                    
+
+                    <div>
+                        <p style="text-align: center;">C</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/hpm/tTcrwOjAo30_0050-hpm-Fr.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                </div>
+
+                <score class="score-name-label">Speech MOS (Naturalness, 语音清晰度)</score>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -445,7 +640,7 @@
                 </div>
 
                 <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <span class="score-name-label">VMOS (Voice Similarity, 声色相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -465,16 +660,46 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 8</strong>: Et la finitude du cosmosaccessible à l'humanité. (French)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/n5Pq6o9rIZQ_0317-Fr.mp4" type="video/mp4">
+                <p id="tldr" style="font-size: 18px;"><strong>Demo 8</strong>: <mark>fozzie-bär, sie erinnern sich,der leicht devote komiker </mark>(German)</p>
 
-                </video>
-                <!-- 评分部分与 Demo 1 相同 -->
-                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div>
+                    <p style="text-align: center;">Reference Speeech 参考音频（提供声色参考）:</p>
+                    <audio controls class="normal-audio-player">
+                        <source src="./data/VC/VC_reference/qpLtetcwo4I_0122-ref.wav" type="audio/wav">
+                    </audio>
+                </div>
+
+                <div class="slider-row">
+                    <div>
+                        <p style="text-align: center;">A</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/hpm/qpLtetcwo4I_0122-hpm-de.wav" type="audio/wav">
+                        </audio>
+                    </div>
+        
+                    <div>
+                        <p style="text-align: center;">B</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/our/qpLtetcwo4I_0122-our-de.wav" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div>
+                        <p style="text-align: center;">C</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/vits/qpLtetcwo4I_0122-vits-de.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                    
+
+                    
+
+                </div>
+
+                <score class="score-name-label">Speech MOS (Naturalness, 语音清晰度)</score>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -497,7 +722,7 @@
                 </div>
 
                 <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <span class="score-name-label">VMOS (Voice Similarity, 声色相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -517,16 +742,46 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 9</strong>: Chegar a algum resultado talvez mudar um pouco da realidade. (Portuguese)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/XePyCIjHwAg_0194-Pt.mp4" type="video/mp4">
+                <p id="tldr" style="font-size: 18px;"><strong>Demo 9</strong>: <mark>elas faziam testes de aptidão musical </mark>(Portuguese)</p>
 
-                </video>
-                <!-- 评分部分与 Demo 1 相同 -->
-                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div>
+                    <p style="text-align: center;">Reference Speeech 参考音频（提供声色参考）:</p>
+                    <audio controls class="normal-audio-player">
+                        <source src="./data/VC/VC_reference/Lp7-O9jYoQw_0109-ref.wav" type="audio/wav">
+                    </audio>
+                </div>
+
+                <div class="slider-row">
+                    
+        
+                    <div>
+                        <p style="text-align: center;">A</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/our/Lp7-O9jYoQw_0109-our-Pt.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                    <div>
+                        <p style="text-align: center;">B</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/hpm/Lp7-O9jYoQw_0109-hpm-Pt.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                    <div>
+                        <p style="text-align: center;">C</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/vits/Lp7-O9jYoQw_0109-vits-Pt.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                    
+
+                    
+
+                </div>
+
+                <score class="score-name-label">Speech MOS (Naturalness, 语音清晰度)</score>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -549,7 +804,7 @@
                 </div>
 
                 <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <span class="score-name-label">VMOS (Voice Similarity, 声色相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -569,16 +824,44 @@
                 </div>
             </div>
         </div>
-        
+
+
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 10</strong>: предположим, через год–два, может, четыре. (Russian)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/cPhc8OVB2Rk_0128-Ru.mp4" type="video/mp4">
+                <p id="tldr" style="font-size: 18px;"><strong>Demo 10</strong>: <mark>en un semáforo me dijo que yole gustaba y me tocó la pierna </mark>(Spanish)</p>
 
-                </video>
-                <!-- 评分部分与 Demo 1 相同 -->
-                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div>
+                    <p style="text-align: center;">Reference Speeech 参考音频（提供声色参考）:</p>
+                    <audio controls class="normal-audio-player">
+                        <source src="./data/VC/VC_reference/iPk9VTATmGM_0045-ref.wav" type="audio/wav">
+                    </audio>
+                </div>
+
+                <div class="slider-row">
+                    
+                    <div>
+                        <p style="text-align: center;">A</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/vits/iPk9VTATmGM_0045-vits-Es.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                    <div>
+                        <p style="text-align: center;">B</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/our/iPk9VTATmGM_0045-our-Es.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                    <div>
+                        <p style="text-align: center;">C</p>
+                        <audio controls class="small-audio-player">
+                            <source src="./data/VC/hpm/iPk9VTATmGM_0045-hpm-Es.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                    
+
+                </div>
+
+                <score class="score-name-label">Speech MOS (Naturalness, 语音清晰度)</score>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -601,7 +884,7 @@
                 </div>
 
                 <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <span class="score-name-label">VMOS (Voice Similarity, 声色相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
@@ -621,7 +904,8 @@
                 </div>
             </div>
         </div>
-
+        
+     
         <button type="submit">Submit</button>
     </form>
 
@@ -683,9 +967,9 @@
 
             rowsSyncMOS.push({
                 'Demo': `Demo ${index + 1}`,
-                'A SyncMOS Score': oursSyncMOSScore,
-                'B SyncMOS Score': iplapSyncMOSScore,
-                'C SyncMOS Score': talklipSyncMOSScore
+                'A SMOS Score': oursSyncMOSScore,
+                'B SMOS Score': iplapSyncMOSScore,
+                'C SMOS Score': talklipSyncMOSScore
             });
         });
 
@@ -698,7 +982,7 @@
         XLSX.utils.book_append_sheet(workbook, worksheetSyncMOS, 'SyncMOS Results');
 
         // Export to Excel file
-        XLSX.writeFile(workbook, 'lip_motion_user_study_results.xlsx');
+        XLSX.writeFile(workbook, 'LC2_user_study_results.xlsx');
 
         alert('Form submitted! Your results have been saved. Please sent the results to Jiaxin Ye (jxye22@m.fudan.edu.cn). Have a nice day✌️ 表格已提交！您的结果已保存。请将结果发送给 Jiaxin Ye。祝您有美好的一天✌️');
     });
