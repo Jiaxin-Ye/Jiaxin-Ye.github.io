@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>User Study</title>
+    <link href="./css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="stylesheet" href="./css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/user.css">
+    
+    <link rel="icon" href="./images/favicon.svg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    
+    <script defer src="./js/fontawesome.all.min.js"></script>
+    <script src="./js/bulma-carousel.min.js"></script>
+    <script src="./js/bulma-slider.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+            startup: {
+                renderer: 'svg'
+              }
+        });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+
+</head>
+
+<body>
+<div class="content">
+    <h1><strong>Lip Motion Cloning User Study</strong></h1>
+    <p id="tldr">
+        Please evaluate the following videos based on their <mark>naturalness and lip synchronization accuracy</mark> with Ground Truth.<br>
+        请与真实视频（GT）对比，从<mark>自然度和口型同步准确度</mark>两个维度对结果进行评估。
+    </p>
+
+    <h2>Scoring Guidelines 打分指引</h2>
+    <p id="tldr">
+        Please read the following scoring criteria first. You will rate each video demo given below (i.e., the difference between the video of different methods and the real video) from 1 to 5 points. <mark>The higher the score, the better the quality and the stronger the synchronization.</mark>
+        <br>
+        请您先阅读以下评分标准，你将对以下给出的每一个视频demo（即对比不同方法的视频和真实视频的差异）做出1-5分的打分，<mark>分数越高表示质量越好，同步性越强。</mark>
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>Level</th>
+                <th>Value</th>
+                <th>Video MOS Description</th>
+                <th>SyncMOS Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Excellent<br>优</td>
+                <td>5</td>
+                <td>Clear and Natural: The video is extremely clear, natural, and smooth, with rich details and no noticeable artifacts. Quality is acceptable.<br>清晰自然： 视频画面非常清晰，自然流畅，细节丰富，无明显伪影。质量可接受。</td>
+                <td>Highly Synchronized: Lip movements match the audio perfectly, with no delay or misalignment. It feels natural, and the quality is acceptable.<br>高度同步： 唇部运动与语音高度一致，无延迟或错位，感觉自然，质量可接受。</td>
+            </tr>
+            <tr>
+                <td>Good<br>良</td>
+                <td>4</td>
+                <td>Mostly Clear: The video is generally clear, with occasional slight artifacts that have minimal impact. Quality is decent.<br>基本清晰： 视频整体清晰度较好，偶有轻微伪影，影响不大。质量尚可。</td>
+                <td>Mostly Synchronized: The synchronization is generally good, with minor delays occasionally, but overall impact is minimal. Quality is decent.<br>基本同步： 同步性较好，偶有轻微延迟，但整体影响不大。质量尚可。</td>
+            </tr>
+            <tr>
+                <td>Fair<br>合格</td>
+                <td>3</td>
+                <td>Moderately Clear: The video clarity is average, with noticeable artifacts and some loss of detail. Quality is mediocre.<br>中等清晰： 视频清晰度一般，伪影明显，细节有所缺失。质量中等。</td>
+                <td>Moderate Synchronization: Synchronization is average, with noticeable delays or misalignment that require adjustment. Quality is average.<br>同步一般： 同步性一般，存在明显延迟或错位，需要适应。质量普通。</td>
+            </tr>
+            <tr>
+                <td>Bad<br>差</td>
+                <td>2</td>
+                <td>Low Clarity: The video has low clarity, significant artifacts, and blurred details. Quality is poor.清晰度低： 视频清晰度较低，伪影显著，画面模糊，细节难以辨认。质量较差。<br></td>
+                <td>Poorly Synchronized: Synchronization is poor, with clear delays affecting the viewing experience. Quality is subpar.<br>同步较差： 同步性差，延迟明显，影响观看体验。质量不佳。</td>
+            </tr>
+            <tr>
+                <td>Poor<br>劣</td>
+                <td>1</td>
+                <td>Highly Blurred: The video is extremely blurred, with severe artifacts and almost no visible details. Quality is unacceptable.<br>严重模糊： 视频极为模糊，伪影严重，几乎没有细节。质量不可接受。</td>
+                <td>Severely Unsynchronized: Synchronization is severely off, with significant delays. The viewing experience is very poor, and the quality is unacceptable.<br>严重不同步： 同步性严重不良，延迟显著。观感极差，质量无法接受。</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="content">
+    <h1><strong>Start Scoring!</strong></h1>
+    <p id="tldr">
+        Please score <mark>3 methods (A, B, C)</mark> based on the naturalness and lip sync. GT is a real video for reference.<br>
+        请根据自然度和口型同步对<mark>三种方法（A、B、C）</mark>进行评分。GT是仅供参考的真实视频。
+    </p>
+
+    <form id="user-study-form">
+        <div class="subcontent">
+            <div class="video-container">
+                <p id="tldr"><strong>Demo 1</strong>: We have the tools but we lack the collective will and momentum (English)</p>
+                <video controls width="90%">
+                    <source src="./data/LC/vhVWzkbAW4I_0006-En.mp4" type="video/mp4">
+
+                </video>
+
+                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                       
+                        <span id="ours-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-mos-id1" name="ours_mos" oninput="updateScoreLabel('ours-mos-id1', 'ours-mos-label-id1')">
+                    </div>
+
+                   <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-mos-id1" name="talklip_mos" oninput="updateScoreLabel('talklip-mos-id1', 'talklip-mos-label-id1')">
+                    </div>
+
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-mos-id1" name="iplap_mos" oninput="updateScoreLabel('iplap-mos-id1', 'iplap-mos-label-id1')">
+                    </div>
+                </div>
+
+                <!-- SyncMOS 评分行 -->
+                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                        <span id="ours-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id1" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id1', 'ours-syncmos-label-id1')">
+                    </div>
+                    <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id1" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id1', 'talklip-syncmos-label-id1')">
+                    </div>
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id1" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id1', 'iplap-syncmos-label-id1')">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcontent">
+            <div class="video-container">
+                <p id="tldr"><strong>Demo 2</strong>: Show abuse the light of day by talking about it with your children your coworkers your friends and (English)</p>
+                <video controls width="90%">
+                    <source src="./data/LC/V1yW5IsnSjo_0006-En.mp4" type="video/mp4">
+
+                </video>
+                <!-- 评分部分与 Demo 1 相同 -->
+                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                       
+                        <span id="ours-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-mos-id1" name="ours_mos" oninput="updateScoreLabel('ours-mos-id1', 'ours-mos-label-id1')">
+                    </div>
+
+                   <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-mos-id1" name="talklip_mos" oninput="updateScoreLabel('talklip-mos-id1', 'talklip-mos-label-id1')">
+                    </div>
+
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-mos-id1" name="iplap_mos" oninput="updateScoreLabel('iplap-mos-id1', 'iplap-mos-label-id1')">
+                    </div>
+                </div>
+
+                <!-- SyncMOS 评分行 -->
+                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                        <span id="ours-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id1" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id1', 'ours-syncmos-label-id1')">
+                    </div>
+                    <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id1" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id1', 'talklip-syncmos-label-id1')">
+                    </div>
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id1" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id1', 'iplap-syncmos-label-id1')">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="subcontent">
+            <div class="video-container">
+                <p id="tldr"><strong>Demo 3</strong>: Texting has a one hundred percent open rate (English)</p>
+                <video controls width="90%">
+                    <source src="./data/LC/LiUClSItcy0_0000-En.mp4" type="video/mp4">
+
+                </video>
+                <!-- 评分部分与 Demo 1 相同 -->
+                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                       
+                        <span id="ours-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-mos-id1" name="ours_mos" oninput="updateScoreLabel('ours-mos-id1', 'ours-mos-label-id1')">
+                    </div>
+
+                   <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-mos-id1" name="talklip_mos" oninput="updateScoreLabel('talklip-mos-id1', 'talklip-mos-label-id1')">
+                    </div>
+
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-mos-id1" name="iplap_mos" oninput="updateScoreLabel('iplap-mos-id1', 'iplap-mos-label-id1')">
+                    </div>
+                </div>
+
+                <!-- SyncMOS 评分行 -->
+                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                        <span id="ours-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id1" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id1', 'ours-syncmos-label-id1')">
+                    </div>
+                    <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id1" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id1', 'talklip-syncmos-label-id1')">
+                    </div>
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id1" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id1', 'iplap-syncmos-label-id1')">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="subcontent">
+            <div class="video-container">
+                <p id="tldr"><strong>Demo 4</strong>: I realize of course that all countries are unique (English)</p>
+                <video controls width="90%">
+                    <source src="./data/LC/TScetimMBL8_0000-En.mp4" type="video/mp4">
+
+                </video>
+                <!-- 评分部分与 Demo 1 相同 -->
+                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                       
+                        <span id="ours-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-mos-id1" name="ours_mos" oninput="updateScoreLabel('ours-mos-id1', 'ours-mos-label-id1')">
+                    </div>
+
+                   <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-mos-id1" name="talklip_mos" oninput="updateScoreLabel('talklip-mos-id1', 'talklip-mos-label-id1')">
+                    </div>
+
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-mos-id1" name="iplap_mos" oninput="updateScoreLabel('iplap-mos-id1', 'iplap-mos-label-id1')">
+                    </div>
+                </div>
+
+                <!-- SyncMOS 评分行 -->
+                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                        <span id="ours-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id1" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id1', 'ours-syncmos-label-id1')">
+                    </div>
+                    <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id1" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id1', 'talklip-syncmos-label-id1')">
+                    </div>
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id1" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id1', 'iplap-syncmos-label-id1')">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="subcontent">
+            <div class="video-container">
+                <p id="tldr"><strong>Demo 5</strong>: You are a healer in a stone age village (English)</p>
+                <video controls width="90%">
+                    <source src="./data/LC/fIICVeGW4RY_0000-En.mp4" type="video/mp4">
+
+                </video>
+                <!-- 评分部分与 Demo 1 相同 -->
+                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                       
+                        <span id="ours-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-mos-id1" name="ours_mos" oninput="updateScoreLabel('ours-mos-id1', 'ours-mos-label-id1')">
+                    </div>
+
+                   <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-mos-id1" name="talklip_mos" oninput="updateScoreLabel('talklip-mos-id1', 'talklip-mos-label-id1')">
+                    </div>
+
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-mos-id1" name="iplap_mos" oninput="updateScoreLabel('iplap-mos-id1', 'iplap-mos-label-id1')">
+                    </div>
+                </div>
+
+                <!-- SyncMOS 评分行 -->
+                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                        <span id="ours-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id1" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id1', 'ours-syncmos-label-id1')">
+                    </div>
+                    <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id1" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id1', 'talklip-syncmos-label-id1')">
+                    </div>
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id1" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id1', 'iplap-syncmos-label-id1')">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="subcontent">
+            <div class="video-container">
+                <p id="tldr"><strong>Demo 6</strong>: Dann schalten wir unseren körperchronisch auf alarmstufe rot. (German)</p>
+                <video controls width="90%">
+                    <source src="./data/LC/WhcvAXG-lcU_0122-De.mp4" type="video/mp4">
+
+                </video>
+                <!-- 评分部分与 Demo 1 相同 -->
+                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                       
+                        <span id="ours-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-mos-id1" name="ours_mos" oninput="updateScoreLabel('ours-mos-id1', 'ours-mos-label-id1')">
+                    </div>
+
+                   <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-mos-id1" name="talklip_mos" oninput="updateScoreLabel('talklip-mos-id1', 'talklip-mos-label-id1')">
+                    </div>
+
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-mos-id1" name="iplap_mos" oninput="updateScoreLabel('iplap-mos-id1', 'iplap-mos-label-id1')">
+                    </div>
+                </div>
+
+                <!-- SyncMOS 评分行 -->
+                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                        <span id="ours-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id1" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id1', 'ours-syncmos-label-id1')">
+                    </div>
+                    <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id1" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id1', 'talklip-syncmos-label-id1')">
+                    </div>
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id1" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id1', 'iplap-syncmos-label-id1')">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="subcontent">
+            <div class="video-container">
+                <p id="tldr"><strong>Demo 7</strong>: Un poderoso instrumentode exclusión social. (Spanish)</p>
+                <video controls width="90%">
+                    <source src="./data/LC/U0bRlf7xmYs_0056-Es.mp4" type="video/mp4">
+
+                </video>
+                <!-- 评分部分与 Demo 1 相同 -->
+            </div>
+        </div>
+        
+        <div class="subcontent">
+            <div class="video-container">
+                <p id="tldr"><strong>Demo 8</strong>: Donc, si j'essaye de faire un poème (French)</p>
+                <video controls width="90%">
+                    <source src="./data/LC/16MWHwqz0mQ_0181-Fr.mp4" type="video/mp4">
+
+                </video>
+                <!-- 评分部分与 Demo 1 相同 -->
+                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                       
+                        <span id="ours-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-mos-id1" name="ours_mos" oninput="updateScoreLabel('ours-mos-id1', 'ours-mos-label-id1')">
+                    </div>
+
+                   <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-mos-id1" name="talklip_mos" oninput="updateScoreLabel('talklip-mos-id1', 'talklip-mos-label-id1')">
+                    </div>
+
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-mos-id1" name="iplap_mos" oninput="updateScoreLabel('iplap-mos-id1', 'iplap-mos-label-id1')">
+                    </div>
+                </div>
+
+                <!-- SyncMOS 评分行 -->
+                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                        <span id="ours-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id1" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id1', 'ours-syncmos-label-id1')">
+                    </div>
+                    <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id1" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id1', 'talklip-syncmos-label-id1')">
+                    </div>
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id1" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id1', 'iplap-syncmos-label-id1')">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="subcontent">
+            <div class="video-container">
+                <p id="tldr"><strong>Demo 9</strong>: Chegar a algum resultado talvez mudar um pouco da realidade. (Portuguese)</p>
+                <video controls width="90%">
+                    <source src="./data/LC/XePyCIjHwAg_0194-Pt.mp4" type="video/mp4">
+
+                </video>
+                <!-- 评分部分与 Demo 1 相同 -->
+                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                       
+                        <span id="ours-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-mos-id1" name="ours_mos" oninput="updateScoreLabel('ours-mos-id1', 'ours-mos-label-id1')">
+                    </div>
+
+                   <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-mos-id1" name="talklip_mos" oninput="updateScoreLabel('talklip-mos-id1', 'talklip-mos-label-id1')">
+                    </div>
+
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-mos-id1" name="iplap_mos" oninput="updateScoreLabel('iplap-mos-id1', 'iplap-mos-label-id1')">
+                    </div>
+                </div>
+
+                <!-- SyncMOS 评分行 -->
+                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                        <span id="ours-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id1" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id1', 'ours-syncmos-label-id1')">
+                    </div>
+                    <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id1" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id1', 'talklip-syncmos-label-id1')">
+                    </div>
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id1" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id1', 'iplap-syncmos-label-id1')">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="subcontent">
+            <div class="video-container">
+                <p id="tldr"><strong>Demo 10</strong>: и боится, что, перейдя в точку б,его профессия будет уже невостребована. (Russian)</p>
+                <video controls width="90%">
+                    <source src="./data/LC/cPhc8OVB2Rk_0121-Ru.mp4" type="video/mp4">
+
+                </video>
+                <!-- 评分部分与 Demo 1 相同 -->
+                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                       
+                        <span id="ours-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-mos-id1" name="ours_mos" oninput="updateScoreLabel('ours-mos-id1', 'ours-mos-label-id1')">
+                    </div>
+
+                   <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-mos-id1" name="talklip_mos" oninput="updateScoreLabel('talklip-mos-id1', 'talklip-mos-label-id1')">
+                    </div>
+
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-mos-id1" name="iplap_mos" oninput="updateScoreLabel('iplap-mos-id1', 'iplap-mos-label-id1')">
+                    </div>
+                </div>
+
+                <!-- SyncMOS 评分行 -->
+                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                        <span id="ours-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id1" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id1', 'ours-syncmos-label-id1')">
+                    </div>
+                    <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id1" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id1', 'talklip-syncmos-label-id1')">
+                    </div>
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id1" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id1', 'iplap-syncmos-label-id1')">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    
+    
+</div>
+
+
+<div class="content">
+    <p>
+        This questionnaire is part of a research study and your responses will be anonymized. Thank you for your participation!
+        <br>
+        此问卷是我们研究的一部分，您的回答将被匿名。感谢您的参与！
+    </p>
+</div>
+<script>
+    function updateScoreLabel(sliderId, labelId) {
+        const slider = document.getElementById(sliderId);
+        const label = document.getElementById(labelId);
+        const value = slider.value;
+        let level = '';
+
+        if (value <= 1) {
+            level = 'Poor';
+        } else if (value <= 2) {
+            level = 'Bad';
+        } else if (value <= 3) {
+            level = 'Fair';
+        } else if (value <= 4) {
+            level = 'Good';
+        } else {
+            level = 'Excellent';
+        }
+
+        label.textContent = `Score: ${value} (${level})`;
+    }
+
+    document.getElementById('user-study-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const subcontents = document.querySelectorAll('.subcontent');
+        const rows = [];
+
+        subcontents.forEach((subcontent, index) => {
+            const oursScore = subcontent.querySelector('#ours-mos-id1').value;
+            const talklipScore = subcontent.querySelector('#talklip-mos-id1').value;
+            const iplapScore = subcontent.querySelector('#iplap-mos-id1').value;
+
+            rows.push({
+                'Subcontent': `Subcontent ${index + 1}`,
+                'Ours Score': oursScore,
+                'TalkLip Score': talklipScore,
+                'IP-LAP Score': iplapScore
+            });
+        });
+
+        console.log('Rows:', rows); // Debugging output to ensure data is collected correctly
+
+        const worksheet = XLSX.utils.json_to_sheet(rows);
+        const workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, worksheet, 'Results');
+
+        // Export to Excel file
+        XLSX.writeFile(workbook, 'lip_motion_user_study_results.xlsx');
+
+        alert('Form submitted! Your results have been saved. Please sent the results to Jiaxin Ye (jxye22@m.fudan.edu.cn). Have a nice day✌️ 表格已提交！您的结果已保存。请将结果发送给 Jiaxin Ye。祝您有美好的一天✌️');
+    });
+</script>
+</body>
+
+</html>
