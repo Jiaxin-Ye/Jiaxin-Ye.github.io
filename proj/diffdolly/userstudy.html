@@ -147,6 +147,57 @@
                 </div>
             </div>
         </div>
+        <div class="subcontent">
+            <div class="video-container">
+                <h4 class="video-label">Demo 1: GT is real video, A&B&C</h4>
+                <video controls width="90%">
+                    <source src="./data/LC/test.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                       
+                        <span id="ours-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-mos-id1" name="ours_mos" oninput="updateScoreLabel('ours-mos-id1', 'ours-mos-label-id1')">
+                    </div>
+
+                   <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-mos-id1" name="talklip_mos" oninput="updateScoreLabel('talklip-mos-id1', 'talklip-mos-label-id1')">
+                    </div>
+
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-mos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-mos-id1" name="iplap_mos" oninput="updateScoreLabel('iplap-mos-id1', 'iplap-mos-label-id1')">
+                    </div>
+                </div>
+
+                <!-- SyncMOS 评分行 -->
+                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <div class="slider-row">
+                    <h5>A</h5>
+                    <div class="slider-container">
+                        <span id="ours-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id1" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id1', 'ours-syncmos-label-id1')">
+                    </div>
+                    <h5>B</h5>
+                    <div class="slider-container">
+                        <span id="talklip-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id1" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id1', 'talklip-syncmos-label-id1')">
+                    </div>
+                    <h5>C</h5>
+                    <div class="slider-container">
+                        <span id="iplap-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id1" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id1', 'iplap-syncmos-label-id1')">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <button type="submit">Submit</button>
     </form>
