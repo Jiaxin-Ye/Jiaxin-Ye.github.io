@@ -40,15 +40,15 @@
 <div class="content">
     <h1><strong>Face Cloning User Study</strong></h1>
     <p id="tldr">
-        Please evaluate the following videos based on their <mark>naturalness and facial similarity</mark> with reference video.<br>
-        请与参考视频对比，从<mark>自然度和人脸属性保留</mark>两个维度对结果进行评估。
+        Please evaluate the following videos based on their <mark>naturalness with <strong>Reference Video</strong> and facial identity similarity with <strong>Reference Face</strong></mark>.<br>
+        请与参考视频比较对<mark>自然度</mark>进行评估，与参考面部图像比较对<mark>面部相似度</mark>进行评估。
     </p>
 
     <h2>Scoring Guidelines 打分指引</h2>
     <p id="tldr">
-        Please read the following scoring criteria first. You will rate each video demo given below (i.e., the difference between the video of different methods and the real video) from 1 to 5 points. <mark>The higher the score, the better the quality and the stronger the synchronization.</mark>
+        Please read the following scoring criteria first. You will rate each video demo given below (i.e., the difference between the video of different methods and the reference face and video) from 1 to 5 points. <mark>The higher the score, the better the quality and the stronger the synchronization.</mark>
         <br>
-        请您先阅读以下评分标准，你将对以下给出的每一个视频demo（即对比不同方法的视频和真实视频的差异）做出1-5分的打分，<mark>分数越高表示质量越好，同步性越强。</mark>
+        请您先阅读以下评分标准，你将对以下给出的每一个视频demo（即对比不同方法的视频和参考面部和参考视频的差异）做出1-5分的打分，<mark>分数越高表示质量越好，同步性越强。</mark>
     </p>
     <table>
         <thead>
@@ -56,7 +56,7 @@
                 <th>Level</th>
                 <th>Value</th>
                 <th>Video MOS Description</th>
-                <th>SyncMOS Description</th>
+                <th>IDMOS Description</th>
             </tr>
         </thead>
         <tbody>
@@ -64,31 +64,31 @@
                 <td>Excellent<br>优</td>
                 <td>5</td>
                 <td>Clear and Natural: The video is extremely clear, natural, and smooth, with rich details and no noticeable artifacts. Quality is acceptable.<br>清晰自然： 视频画面非常清晰，自然流畅，细节丰富，无明显伪影。质量可接受。</td>
-                <td>Highly Synchronized: Lip movements match the audio perfectly, with no delay or misalignment. It feels natural, and the quality is acceptable.<br>高度同步： 唇部运动与语音高度一致，无延迟或错位，感觉自然，质量可接受。</td>
+                <td>Highly Similar: The generated face closely resembles the target identity, with expressions and head movements nearly identical to the reference video.<br>十分相似：生成的人脸与目标身份十分相似，表情和头部姿势与参考视频几乎一致。</td>
             </tr>
             <tr>
                 <td>Good<br>良</td>
                 <td>4</td>
                 <td>Mostly Clear: The video is generally clear, with occasional slight artifacts that have minimal impact. Quality is decent.<br>基本清晰： 视频整体清晰度较好，偶有轻微伪影，影响不大。质量尚可。</td>
-                <td>Mostly Synchronized: The synchronization is generally good, with minor delays occasionally, but overall impact is minimal. Quality is decent.<br>基本同步： 同步性较好，偶有轻微延迟，但整体影响不大。质量尚可。</td>
+                <td>Fairly Similar: The generated face is quite similar to the target identity, with expressions and head movements mostly consistent with the reference video.<br>生成的人脸与目标身份比较相似，表情和头部姿势与参考视频较为一致。</td>
             </tr>
             <tr>
                 <td>Fair<br>合格</td>
                 <td>3</td>
                 <td>Moderately Clear: The video clarity is average, with noticeable artifacts and some loss of detail. Quality is mediocre.<br>中等清晰： 视频清晰度一般，伪影明显，细节有所缺失。质量中等。</td>
-                <td>Moderate Synchronization: Synchronization is average, with noticeable delays or misalignment that require adjustment. Quality is average.<br>同步一般： 同步性一般，存在明显延迟或错位，需要适应。质量普通。</td>
+                <td>Moderate Similarity: The generated face has a general resemblance to the target identity, with some differences in expressions and head movements compared to the reference video.<br>一般相似：生成的人脸与目标身份一般相似，表情和头部姿势和参考视频有一些差异。</td>
             </tr>
             <tr>
                 <td>Bad<br>差</td>
                 <td>2</td>
-                <td>Low Clarity: The video has low clarity, significant artifacts, and blurred details. Quality is poor.清晰度低： 视频清晰度较低，伪影显著，画面模糊，细节难以辨认。质量较差。<br></td>
-                <td>Poorly Synchronized: Synchronization is poor, with clear delays affecting the viewing experience. Quality is subpar.<br>同步较差： 同步性差，延迟明显，影响观看体验。质量不佳。</td>
+                <td>Low Clarity: The video has low clarity, significant artifacts, and blurred details. Quality is poor.<br>清晰度低： 视频清晰度较低，伪影显著，画面模糊，细节难以辨认。质量较差。</td>
+                <td>Low Similarity: The generated face bears little resemblance to the target identity, with noticeable differences in expressions and head movements compared to the reference video.<br>相似度较低：生成的人脸与目标身份相似度较低，表情和头部姿势和参考视频有差异。</td>
             </tr>
             <tr>
                 <td>Poor<br>劣</td>
                 <td>1</td>
                 <td>Highly Blurred: The video is extremely blurred, with severe artifacts and almost no visible details. Quality is unacceptable.<br>严重模糊： 视频极为模糊，伪影严重，几乎没有细节。质量不可接受。</td>
-                <td>Severely Unsynchronized: Synchronization is severely off, with significant delays. The viewing experience is very poor, and the quality is unacceptable.<br>严重不同步： 同步性严重不良，延迟显著。观感极差，质量无法接受。</td>
+                <td>Barely Similar: The generated face has minimal similarity to the target identity, with significant differences in expressions and head movements compared to the reference video.<br>几乎不相似：生成的人脸与目标身份几乎不相似，表情和头部姿势和参考视频有很大差异。</td>
             </tr>
         </tbody>
     </table>
@@ -96,17 +96,20 @@
 <div class="content">
     <h1><strong>Start Scoring!</strong></h1>
     <p id="tldr">
-        Please score <mark>3 methods (A, B, C)</mark> based on the naturalness and lip sync. GT is a real video for reference.<br>
-        请根据自然度和口型同步对<mark>三种方法（A、B、C）</mark>进行评分。GT是仅供参考的真实视频。
+        Please score <mark>3 methods (A, B, C) with randomly shffule</mark> based on the naturalness and facial identity simialrity. Reference video provides motion and expression. Reference face provides identity.<br>
+        请根据自然度和人脸相似度对<mark>三种随机打乱的方法（A、B、C）</mark>进行评分。参考视频提供对应的动作和表情，参考脸部图像提供人脸身份。
     </p>
 
+   
     <form id="user-study-form">
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 1</strong>: We have the tools but we lack the collective will and momentum (English)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/vhVWzkbAW4I_0006-En.mp4" type="video/mp4">
+                <p id="tldr"><strong>Demo 1</strong></p>
 
+                <p id="tldr"><strong>Instruction</strong>: Scoring based on the clarity of the test video and the reference video, and scoring based on the facial similarity between the test video and the reference face; <br><strong>说明</strong>：根据测试视频和reference video的清晰度打分，和根据测试视频和reference face的人脸相似程度打分。</p>
+                
+                <video controls width="100%">
+                    <source src="./data/FC_comparision/16MWHwqz0mQ_0015->8VwTZFYSfvw_0001.mp4" type="video/mp4">
                 </video>
 
                 <score class="score-name-label">Video MOS (Naturalness, 清晰度)</score>
@@ -131,23 +134,23 @@
                     </div>
                 </div>
 
-                <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <!-- IDMOS 评分行 -->
+                <span class="score-name-label">IDMOS (ID similarity, 身份相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
-                        <span id="ours-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id1" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id1', 'ours-syncmos-label-id1')">
+                        <span id="ours-idmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-idmos-id1" name="ours_idmos" oninput="updateScoreLabel('ours-idmos-id1', 'ours-idmos-label-id1')">
                     </div>
                     <h5>B</h5>
                     <div class="slider-container">
-                        <span id="iplap-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id1" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id1', 'iplap-syncmos-label-id1')">
+                        <span id="iplap-idmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-idmos-id1" name="iplap_idmos" oninput="updateScoreLabel('iplap-idmos-id1', 'iplap-idmos-label-id1')">
                     </div>
                     <h5>C</h5>
                     <div class="slider-container">
-                        <span id="talklip-syncmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id1" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id1', 'talklip-syncmos-label-id1')">
+                        <span id="talklip-idmos-label-id1" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-idmos-id1" name="talklip_idmos" oninput="updateScoreLabel('talklip-idmos-id1', 'talklip-idmos-label-id1')">
                     </div>
                 </div>
             </div>
@@ -155,9 +158,13 @@
 
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 2</strong>: Show abuse the light of day by talking about it with your children your coworkers your friends and (English)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/V1yW5IsnSjo_0006-En.mp4" type="video/mp4">
+                <p id="tldr"><strong>Demo 2</strong></p>
+
+                <p id="tldr"><strong>Instruction</strong>: Scoring based on the clarity of the test video and the reference video, and scoring based on the facial similarity between the test video and the reference face; <br><strong>说明</strong>：根据测试视频和reference video的清晰度打分，和根据测试视频和reference face的人脸相似程度打分。</p>
+                
+
+                <video controls width="100%">
+                    <source src="./data/FC_comparision/16MWHwqz0mQ_0014->wCPPrDCCn_k_0153.mp4" type="video/mp4">
 
                 </video>
                 <!-- 评分部分与 Demo 1 相同 -->
@@ -183,23 +190,23 @@
                     </div>
                 </div>
 
-                <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <!-- IDMOS 评分行 -->
+                <span class="score-name-label">IDMOS (ID similarity, 身份相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
-                        <span id="ours-syncmos-label-id2" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id2" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id2', 'ours-syncmos-label-id2')">
+                        <span id="ours-idmos-label-id2" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-idmos-id2" name="ours_idmos" oninput="updateScoreLabel('ours-idmos-id2', 'ours-idmos-label-id2')">
                     </div>
                     <h5>B</h5>
                     <div class="slider-container">
-                        <span id="iplap-syncmos-label-id2" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id2" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id2', 'iplap-syncmos-label-id2')">
+                        <span id="iplap-idmos-label-id2" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-idmos-id2" name="iplap_idmos" oninput="updateScoreLabel('iplap-idmos-id2', 'iplap-idmos-label-id2')">
                     </div>
                     <h5>C</h5>
                     <div class="slider-container">
-                        <span id="talklip-syncmos-label-id2" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id2" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id2', 'talklip-syncmos-label-id2')">
+                        <span id="talklip-idmos-label-id2" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-idmos-id2" name="talklip_idmos" oninput="updateScoreLabel('talklip-idmos-id2', 'talklip-idmos-label-id2')">
                     </div>
                 </div>
             </div>
@@ -207,9 +214,14 @@
         
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 3</strong>: Texting has a one hundred percent open rate (English)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/LiUClSItcy0_0000-En.mp4" type="video/mp4">
+                <p id="tldr"><strong>Demo 3</strong></p>
+
+                <p id="tldr"><strong>Instruction</strong>: Scoring based on the clarity of the test video and the reference video, and scoring based on the facial similarity between the test video and the reference face; <br><strong>说明</strong>：根据测试视频和reference video的清晰度打分，和根据测试视频和reference face的人脸相似程度打分。</p>
+                
+
+
+                <video controls width="100%">
+                    <source src="./data/FC_comparision/16MWHwqz0mQ_0030->NoCOagL69Ss_0000.mp4" type="video/mp4">
 
                 </video>
                 <!-- 评分部分与 Demo 1 相同 -->
@@ -235,23 +247,23 @@
                     </div>
                 </div>
 
-                <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <!-- IDMOS 评分行 -->
+                <span class="score-name-label">IDMOS (ID similarity, 身份相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
-                        <span id="ours-syncmos-label-id3" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id3" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id3', 'ours-syncmos-label-id3')">
+                        <span id="ours-idmos-label-id3" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-idmos-id3" name="ours_idmos" oninput="updateScoreLabel('ours-idmos-id3', 'ours-idmos-label-id3')">
                     </div>
                     <h5>B</h5>
                     <div class="slider-container">
-                        <span id="iplap-syncmos-label-id3" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id3" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id3', 'iplap-syncmos-label-id3')">
+                        <span id="iplap-idmos-label-id3" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-idmos-id3" name="iplap_idmos" oninput="updateScoreLabel('iplap-idmos-id3', 'iplap-idmos-label-id3')">
                     </div>
                     <h5>C</h5>
                     <div class="slider-container">
-                        <span id="talklip-syncmos-label-id3" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id3" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id3', 'talklip-syncmos-label-id3')">
+                        <span id="talklip-idmos-label-id3" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-idmos-id3" name="talklip_idmos" oninput="updateScoreLabel('talklip-idmos-id3', 'talklip-idmos-label-id3')">
                     </div>
                 </div>
             </div>
@@ -259,9 +271,13 @@
         
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 4</strong>: I realize of course that all countries are unique (English)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/TScetimMBL8_0000-En.mp4" type="video/mp4">
+                <p id="tldr"><strong>Demo 4</strong></p>
+
+                <p id="tldr"><strong>Instruction</strong>: Scoring based on the clarity of the test video and the reference video, and scoring based on the facial similarity between the test video and the reference face; <br><strong>说明</strong>：根据测试视频和reference video的清晰度打分，和根据测试视频和reference face的人脸相似程度打分。</p>
+                
+
+                <video controls width="100%">
+                    <source src="./data/FC_comparision/HLIJkmy3vy8_0003->ONGvzb5sYhY_0038.mp4" type="video/mp4">
 
                 </video>
                 <!-- 评分部分与 Demo 1 相同 -->
@@ -287,23 +303,23 @@
                     </div>
                 </div>
 
-                <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <!-- IDMOS 评分行 -->
+                <span class="score-name-label">IDMOS (ID similarity, 身份相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
-                        <span id="ours-syncmos-label-id4" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id4" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id4', 'ours-syncmos-label-id4')">
+                        <span id="ours-idmos-label-id4" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-idmos-id4" name="ours_idmos" oninput="updateScoreLabel('ours-idmos-id4', 'ours-idmos-label-id4')">
                     </div>
                     <h5>B</h5>
                     <div class="slider-container">
-                        <span id="iplap-syncmos-label-id4" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id4" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id4', 'iplap-syncmos-label-id4')">
+                        <span id="iplap-idmos-label-id4" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-idmos-id4" name="iplap_idmos" oninput="updateScoreLabel('iplap-idmos-id4', 'iplap-idmos-label-id4')">
                     </div>
                     <h5>C</h5>
                     <div class="slider-container">
-                        <span id="talklip-syncmos-label-id4" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id4" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id4', 'talklip-syncmos-label-id4')">
+                        <span id="talklip-idmos-label-id4" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-idmos-id4" name="talklip_idmos" oninput="updateScoreLabel('talklip-idmos-id4', 'talklip-idmos-label-id4')">
                     </div>
                 </div>
             </div>
@@ -311,9 +327,14 @@
         
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 5</strong>: You are a healer in a stone age village (English)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/fIICVeGW4RY_0000-En.mp4" type="video/mp4">
+                <p id="tldr"><strong>Demo 5</strong></p>
+
+                <p id="tldr"><strong>Instruction</strong>: Scoring based on the clarity of the test video and the reference video, and scoring based on the facial similarity between the test video and the reference face; <br><strong>说明</strong>：根据测试视频和reference video的清晰度打分，和根据测试视频和reference face的人脸相似程度打分。</p>
+                
+
+
+                <video controls width="100%">
+                    <source src="./data/FC_comparision/HLIJkmy3vy8_0004->8VwTZFYSfvw_0001.mp4" type="video/mp4">
 
                 </video>
                 <!-- 评分部分与 Demo 1 相同 -->
@@ -339,23 +360,23 @@
                     </div>
                 </div>
 
-                <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <!-- IDMOS 评分行 -->
+                <span class="score-name-label">IDMOS (ID similarity, 身份相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
-                        <span id="ours-syncmos-label-id5" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id5" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id5', 'ours-syncmos-label-id5')">
+                        <span id="ours-idmos-label-id5" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-idmos-id5" name="ours_idmos" oninput="updateScoreLabel('ours-idmos-id5', 'ours-idmos-label-id5')">
                     </div>
                     <h5>B</h5>
                     <div class="slider-container">
-                        <span id="iplap-syncmos-label-id5" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id5" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id5', 'iplap-syncmos-label-id5')">
+                        <span id="iplap-idmos-label-id5" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-idmos-id5" name="iplap_idmos" oninput="updateScoreLabel('iplap-idmos-id5', 'iplap-idmos-label-id5')">
                     </div>
                     <h5>C</h5>
                     <div class="slider-container">
-                        <span id="talklip-syncmos-label-id5" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id5" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id5', 'talklip-syncmos-label-id5')">
+                        <span id="talklip-idmos-label-id5" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-idmos-id5" name="talklip_idmos" oninput="updateScoreLabel('talklip-idmos-id5', 'talklip-idmos-label-id5')">
                     </div>
                 </div>
             </div>
@@ -363,9 +384,12 @@
         
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 6</strong>: Dann schalten wir unseren körperchronisch auf alarmstufe rot. (German)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/WhcvAXG-lcU_0122-De.mp4" type="video/mp4">
+                <p id="tldr"><strong>Demo 6</strong></p>
+
+                <p id="tldr"><strong>Instruction</strong>: Scoring based on the clarity of the test video and the reference video, and scoring based on the facial similarity between the test video and the reference face; <br><strong>说明</strong>：根据测试视频和reference video的清晰度打分，和根据测试视频和reference face的人脸相似程度打分。</p>
+                
+                <video controls width="100%">
+                    <source src="./data/FC_comparision/HLIJkmy3vy8_0004->BQZKs75RMqM_0000.mp4" type="video/mp4">
 
                 </video>
                 <!-- 评分部分与 Demo 1 相同 -->
@@ -391,23 +415,23 @@
                     </div>
                 </div>
 
-                <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <!-- IDMOS 评分行 -->
+                <span class="score-name-label">IDMOS (ID similarity, 身份相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
-                        <span id="ours-syncmos-label-id6" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id6" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id6', 'ours-syncmos-label-id6')">
+                        <span id="ours-idmos-label-id6" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-idmos-id6" name="ours_idmos" oninput="updateScoreLabel('ours-idmos-id6', 'ours-idmos-label-id6')">
                     </div>
                     <h5>B</h5>
                     <div class="slider-container">
-                        <span id="iplap-syncmos-label-id6" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id6" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id6', 'iplap-syncmos-label-id6')">
+                        <span id="iplap-idmos-label-id6" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-idmos-id6" name="iplap_idmos" oninput="updateScoreLabel('iplap-idmos-id6', 'iplap-idmos-label-id6')">
                     </div>
                     <h5>C</h5>
                     <div class="slider-container">
-                        <span id="talklip-syncmos-label-id6" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id6" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id6', 'talklip-syncmos-label-id6')">
+                        <span id="talklip-idmos-label-id6" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-idmos-id6" name="talklip_idmos" oninput="updateScoreLabel('talklip-idmos-id6', 'talklip-idmos-label-id6')">
                     </div>
                 </div>
             </div>
@@ -415,9 +439,12 @@
         
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 7</strong>: Un poderoso instrumentode exclusión social. (Spanish)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/U0bRlf7xmYs_0056-Es.mp4" type="video/mp4">
+                <p id="tldr"><strong>Demo 7</strong></p>
+
+                <p id="tldr"><strong>Instruction</strong>: Scoring based on the clarity of the test video and the reference video, and scoring based on the facial similarity between the test video and the reference face; <br><strong>说明</strong>：根据测试视频和reference video的清晰度打分，和根据测试视频和reference face的人脸相似程度打分。</p>
+
+                <video controls width="100%">
+                    <source src="./data/FC_comparision/UhOlDWx4h3M_0006->RiM5aSvaNkg_0001.mp4" type="video/mp4">
 
                 </video>
                 <!-- 评分部分与 Demo 1 相同 -->
@@ -443,23 +470,23 @@
                     </div>
                 </div>
 
-                <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <!-- IDMOS 评分行 -->
+                <span class="score-name-label">IDMOS (ID similarity, 身份相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
-                        <span id="ours-syncmos-label-id7" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id7" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id7', 'ours-syncmos-label-id7')">
+                        <span id="ours-idmos-label-id7" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-idmos-id7" name="ours_idmos" oninput="updateScoreLabel('ours-idmos-id7', 'ours-idmos-label-id7')">
                     </div>
                     <h5>B</h5>
                     <div class="slider-container">
-                        <span id="iplap-syncmos-label-id7" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id7" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id7', 'iplap-syncmos-label-id7')">
+                        <span id="iplap-idmos-label-id7" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-idmos-id7" name="iplap_idmos" oninput="updateScoreLabel('iplap-idmos-id7', 'iplap-idmos-label-id7')">
                     </div>
                     <h5>C</h5>
                     <div class="slider-container">
-                        <span id="talklip-syncmos-label-id7" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id7" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id7', 'talklip-syncmos-label-id7')">
+                        <span id="talklip-idmos-label-id7" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-idmos-id7" name="talklip_idmos" oninput="updateScoreLabel('talklip-idmos-id7', 'talklip-idmos-label-id7')">
                     </div>
                 </div>
             </div>
@@ -467,9 +494,12 @@
         
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 8</strong>: Et la finitude du cosmosaccessible à l'humanité. (French)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/n5Pq6o9rIZQ_0317-Fr.mp4" type="video/mp4">
+                <p id="tldr"><strong>Demo 8</strong></p>
+
+                <p id="tldr"><strong>Instruction</strong>: Scoring based on the clarity of the test video and the reference video, and scoring based on the facial similarity between the test video and the reference face; <br><strong>说明</strong>：根据测试视频和reference video的清晰度打分，和根据测试视频和reference face的人脸相似程度打分。</p>
+
+                <video controls width="100%">
+                    <source src="./data/FC_comparision/UhOlDWx4h3M_0012->BQZKs75RMqM_0000.mp4" type="video/mp4">
 
                 </video>
                 <!-- 评分部分与 Demo 1 相同 -->
@@ -495,23 +525,23 @@
                     </div>
                 </div>
 
-                <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <!-- IDMOS 评分行 -->
+                <span class="score-name-label">IDMOS (ID similarity, 身份相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
-                        <span id="ours-syncmos-label-id8" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id8" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id8', 'ours-syncmos-label-id8')">
+                        <span id="ours-idmos-label-id8" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-idmos-id8" name="ours_idmos" oninput="updateScoreLabel('ours-idmos-id8', 'ours-idmos-label-id8')">
                     </div>
                     <h5>B</h5>
                     <div class="slider-container">
-                        <span id="iplap-syncmos-label-id8" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id8" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id8', 'iplap-syncmos-label-id8')">
+                        <span id="iplap-idmos-label-id8" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-idmos-id8" name="iplap_idmos" oninput="updateScoreLabel('iplap-idmos-id8', 'iplap-idmos-label-id8')">
                     </div>
                     <h5>C</h5>
                     <div class="slider-container">
-                        <span id="talklip-syncmos-label-id8" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id8" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id8', 'talklip-syncmos-label-id8')">
+                        <span id="talklip-idmos-label-id8" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-idmos-id8" name="talklip_idmos" oninput="updateScoreLabel('talklip-idmos-id8', 'talklip-idmos-label-id8')">
                     </div>
                 </div>
             </div>
@@ -519,9 +549,12 @@
         
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 9</strong>: Chegar a algum resultado talvez mudar um pouco da realidade. (Portuguese)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/XePyCIjHwAg_0194-Pt.mp4" type="video/mp4">
+                <p id="tldr"><strong>Demo 9</strong></p>
+
+                <p id="tldr"><strong>Instruction</strong>: Scoring based on the clarity of the test video and the reference video, and scoring based on the facial similarity between the test video and the reference face; <br><strong>说明</strong>：根据测试视频和reference video的清晰度打分，和根据测试视频和reference face的人脸相似程度打分。</p>
+
+                <video controls width="100%">
+                    <source src="./data/FC_comparision/UhOlDWx4h3M_0023->wCPPrDCCn_k_0153.mp4" type="video/mp4">
 
                 </video>
                 <!-- 评分部分与 Demo 1 相同 -->
@@ -547,23 +580,23 @@
                     </div>
                 </div>
 
-                <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <!-- IDMOS 评分行 -->
+                <span class="score-name-label">IDMOS (ID similarity, 身份相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
-                        <span id="ours-syncmos-label-id9" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id9" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id9', 'ours-syncmos-label-id9')">
+                        <span id="ours-idmos-label-id9" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-idmos-id9" name="ours_idmos" oninput="updateScoreLabel('ours-idmos-id9', 'ours-idmos-label-id9')">
                     </div>
                     <h5>B</h5>
                     <div class="slider-container">
-                        <span id="iplap-syncmos-label-id9" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id9" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id9', 'iplap-syncmos-label-id9')">
+                        <span id="iplap-idmos-label-id9" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-idmos-id9" name="iplap_idmos" oninput="updateScoreLabel('iplap-idmos-id9', 'iplap-idmos-label-id9')">
                     </div>
                     <h5>C</h5>
                     <div class="slider-container">
-                        <span id="talklip-syncmos-label-id9" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id9" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id9', 'talklip-syncmos-label-id9')">
+                        <span id="talklip-idmos-label-id9" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-idmos-id9" name="talklip_idmos" oninput="updateScoreLabel('talklip-idmos-id9', 'talklip-idmos-label-id9')">
                     </div>
                 </div>
             </div>
@@ -571,9 +604,12 @@
         
         <div class="subcontent">
             <div class="video-container">
-                <p id="tldr"><strong>Demo 10</strong>: предположим, через год–два, может, четыре. (Russian)</p>
-                <video controls width="90%">
-                    <source src="./data/LC/cPhc8OVB2Rk_0128-Ru.mp4" type="video/mp4">
+                <p id="tldr"><strong>Demo 10</strong></p>
+
+                <p id="tldr"><strong>Instruction</strong>: Scoring based on the clarity of the test video and the reference video, and scoring based on the facial similarity between the test video and the reference face; <br><strong>说明</strong>：根据测试视频和reference video的清晰度打分，和根据测试视频和reference face的人脸相似程度打分。</p>
+
+                <video controls width="100%">
+                    <source src="./data/FC_comparision/UhOlDWx4h3M_0023->8VwTZFYSfvw_0001.mp4" type="video/mp4">
 
                 </video>
                 <!-- 评分部分与 Demo 1 相同 -->
@@ -599,23 +635,23 @@
                     </div>
                 </div>
 
-                <!-- SyncMOS 评分行 -->
-                <span class="score-name-label">SyncMOS (Lip-sync, 唇部同步性)</span>
+                <!-- IDMOS 评分行 -->
+                <span class="score-name-label">IDMOS (ID similarity, 身份相似性)</span>
                 <div class="slider-row">
                     <h5>A</h5>
                     <div class="slider-container">
-                        <span id="ours-syncmos-label-id10" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-syncmos-id10" name="ours_syncmos" oninput="updateScoreLabel('ours-syncmos-id10', 'ours-syncmos-label-id10')">
+                        <span id="ours-idmos-label-id10" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="ours-idmos-id10" name="ours_idmos" oninput="updateScoreLabel('ours-idmos-id10', 'ours-idmos-label-id10')">
                     </div>
                     <h5>B</h5>
                     <div class="slider-container">
-                        <span id="iplap-syncmos-label-id10" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-syncmos-id10" name="iplap_syncmos" oninput="updateScoreLabel('iplap-syncmos-id10', 'iplap-syncmos-label-id10')">
+                        <span id="iplap-idmos-label-id10" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="iplap-idmos-id10" name="iplap_idmos" oninput="updateScoreLabel('iplap-idmos-id10', 'iplap-idmos-label-id10')">
                     </div>
                     <h5>C</h5>
                     <div class="slider-container">
-                        <span id="talklip-syncmos-label-id10" class="score-label">Score: 2.5 (Fair)</span>
-                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-syncmos-id10" name="talklip_syncmos" oninput="updateScoreLabel('talklip-syncmos-id10', 'talklip-syncmos-label-id10')">
+                        <span id="talklip-idmos-label-id10" class="score-label">Score: 2.5 (Fair)</span>
+                        <input type="range" min="0" max="5" step="0.5" class="slider" id="talklip-idmos-id10" name="talklip_idmos" oninput="updateScoreLabel('talklip-idmos-id10', 'talklip-idmos-label-id10')">
                     </div>
                 </div>
             </div>
@@ -624,7 +660,6 @@
         <button type="submit">Submit</button>
     </form>
 
-    
     
 </div>
 
@@ -663,7 +698,7 @@
 
         const subcontents = document.querySelectorAll('.subcontent');
         const rowsMOS = [];
-        const rowsSyncMOS = [];
+        const rowsIDMOS = [];
 
         subcontents.forEach((subcontent, index) => {
             const oursScore = subcontent.querySelector(`#ours-mos-id${index + 1}`).value;
@@ -677,28 +712,28 @@
                 'C MOS Score': talklipScore
             });
 
-            const oursSyncMOSScore = subcontent.querySelector(`#ours-syncmos-id${index + 1}`).value;
-            const iplapSyncMOSScore = subcontent.querySelector(`#iplap-syncmos-id${index + 1}`).value;
-            const talklipSyncMOSScore = subcontent.querySelector(`#talklip-syncmos-id${index + 1}`).value;
+            const oursIDMOSScore = subcontent.querySelector(`#ours-idmos-id${index + 1}`).value;
+            const iplapIDMOSScore = subcontent.querySelector(`#iplap-idmos-id${index + 1}`).value;
+            const talklipIDMOSScore = subcontent.querySelector(`#talklip-idmos-id${index + 1}`).value;
 
-            rowsSyncMOS.push({
+            rowsIDMOS.push({
                 'Demo': `Demo ${index + 1}`,
-                'A SyncMOS Score': oursSyncMOSScore,
-                'B SyncMOS Score': iplapSyncMOSScore,
-                'C SyncMOS Score': talklipSyncMOSScore
+                'A IDMOS Score': oursIDMOSScore,
+                'B IDMOS Score': iplapIDMOSScore,
+                'C IDMOS Score': talklipIDMOSScore
             });
         });
 
         const worksheetMOS = XLSX.utils.json_to_sheet(rowsMOS);
-        const worksheetSyncMOS = XLSX.utils.json_to_sheet(rowsSyncMOS);
+        const worksheetIDMOS = XLSX.utils.json_to_sheet(rowsIDMOS);
         const workbook = XLSX.utils.book_new();
 
         // 将工作表添加到工作簿
         XLSX.utils.book_append_sheet(workbook, worksheetMOS, 'MOS Results');
-        XLSX.utils.book_append_sheet(workbook, worksheetSyncMOS, 'SyncMOS Results');
+        XLSX.utils.book_append_sheet(workbook, worksheetIDMOS, 'IDMOS Results');
 
         // Export to Excel file
-        XLSX.writeFile(workbook, 'lip_motion_user_study_results.xlsx');
+        XLSX.writeFile(workbook, 'FC1_user_study_results.xlsx');
 
         alert('Form submitted! Your results have been saved. Please sent the results to Jiaxin Ye (jxye22@m.fudan.edu.cn). Have a nice day✌️ 表格已提交！您的结果已保存。请将结果发送给 Jiaxin Ye。祝您有美好的一天✌️');
     });

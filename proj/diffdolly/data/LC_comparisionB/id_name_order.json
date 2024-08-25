@@ -1,21 +1,21 @@
 {
     "VfAiNX7jn9A_0004": [
         "GT",
-        "talklip",
         "our_new",
-        "iplap"
+        "iplap",
+        "talklip"
     ],
     "PYHd7rpOTe8_0000": [
         "GT",
         "our_new",
-        "talklip",
-        "iplap"
+        "iplap",
+        "talklip"
     ],
-    "RplnSVTzvnU_0001": [
+    "UAj1hsXp18c_0005": [
         "GT",
-        "our_new",
         "talklip",
-        "iplap"
+        "iplap",
+        "our_new"
     ],
     "ZJNESMhIxQ0_0006": [
         "GT",
@@ -23,16 +23,16 @@
         "iplap",
         "talklip"
     ],
-    "XESFPEFpHt4_0002": [
+    "JSSc7hYKstI_0008": [
         "GT",
-        "our_new",
+        "iplap",
         "talklip",
-        "iplap"
+        "our_new"
     ],
     "QYYTMoQSAHk_0287": [
         "GT",
-        "iplap",
         "our_new",
+        "iplap",
         "talklip"
     ],
     "HLIJkmy3vy8_0165": [
@@ -55,8 +55,8 @@
     ],
     "a1F_YF36bII_0025": [
         "GT",
+        "our_new",
         "iplap",
-        "talklip",
-        "our_new"
+        "talklip"
     ]
 }
