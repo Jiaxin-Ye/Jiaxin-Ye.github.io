@@ -1102,10 +1102,10 @@
 
         // 将工作表添加到工作簿
         XLSX.utils.book_append_sheet(workbook, worksheetMOS, 'MOS Results');
-        XLSX.utils.book_append_sheet(workbook, worksheetSyncMOS, 'SyncMOS Results');
+        XLSX.utils.book_append_sheet(workbook, worksheetSyncMOS, VMOS Results');
 
         // Export to Excel file
-        XLSX.writeFile(workbook, 'LC1_user_study_results.xlsx');
+        XLSX.writeFile(workbook, 'VC1_user_study_results.xlsx');
 
         alert('Form submitted! Your results have been saved. Please sent the results to Jiaxin Ye (jxye22@m.fudan.edu.cn). Have a nice day✌️ 表格已提交！您的结果已保存。请将结果发送给 Jiaxin Ye。祝您有美好的一天✌️');
     });
