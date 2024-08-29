@@ -90,6 +90,12 @@ button[type="submit"] {
     height: 40px; /* 调整高度 */
 }
 
+.tiny-audio-player {
+  width: 140px; /* 调整宽度 */
+  height: 40px; /* 调整高度 */
+}
+
+
 
 .normal-audio-player {
   width: 400px; /* 调整宽度 */
