@@ -63,10 +63,10 @@
             <br>
             <!-- <a href="https://huggingface.co/spaces/Leoxing/Live2Diff" target="_blank"><img
                     src="src/header/huggingface.svg" alt="huggingface" ,="" style="width: 21px;">[Demo]</a> -->
-            <a href=" " target="_blank"><img src="src/header/arxiv.png" alt="arxiv" ,=""
+            <!-- <a href=" " target="_blank"><img src="src/header/arxiv.png" alt="arxiv" ,=""
                     style="width: 21px;">[Paper]</a>
             <a href=" " target="_blank"><img src="src/header/github.png"
-                    alt="github" ,="" style="width: 21px;">[Code]</a>
+                    alt="github" ,="" style="width: 21px;">[Code]</a> -->
             <!-- <a href="https://colab.research.google.com/drive/1Oo0KpOboBAO10ZG_nIB55zbDHpt-Pu68?usp=sharing"
                 target="_blank"><img src="src/header/colab.svg" alt="Colab" ,="" style="width: 42px;">[Colab (New
                 Updated✨)]</a>
@@ -366,112 +366,43 @@
                         <!-- <p id="tldr"><strong>Demo 1</strong></p> -->
                         <div class="slider-row">
                             <div>
-                                <p style="text-align: center;font-size: small;">English</p>
-                                <video id="gallary_dub1_1" controls width="100%" autoplay controls muted loop playsinline>
-                                    <source src="./data/Dub/f2TCJ9XBtvM_0072-fr-en.mp4" type="video/mp4">
-                                </video>
+                                <p style="text-align: center;font-size: small;"><strong>Text</strong></p>
+                                <!-- <p style="text-align: center;font-size: small;">aber auch eine ganz andere,eine sehr persönliche bedeutung.</p> -->
+                                <p style="text-align: center; font-size: small; width: 180px; max-height: 400px; overflow: hidden;">
+                                    aber auch eine ganz andere, eine sehr persönliche bedeutung.
+                                </p>
+                                
+                                
+                                
                             </div>
                             <div>
-                                <p style="text-align: center;font-size: small;">German</p>
-                                <video id="gallary_dub1_2" controls width="100%" autoplay controls muted loop playsinline>
-                                    <source src="./data/Dub/f2TCJ9XBtvM_0072-fr-de.mp4" type="video/mp4">
-                                </video>
+                                <p style="text-align: center;font-size: small;"><strong>Speech</strong></p>
+                                <audio controls class="mpc-audio-player">
+                                    <source src="./data/Dub_MPC/GT/BQZKs75RMqM_0000-src.wav" type="audio/wav">
+                                </audio>
                             </div>
                             <div>
-                                <p style="text-align: center;font-size: small;">Spanish</p>
+                                <p style="text-align: center;font-size: small;"><strong>Facial Image</strong></p>
+                                <img alt="" src="./data/Dub_MPC/GT/BQZKs75RMqM_0000-src.png" style="width: 100%;margin: 0 auto;" />
+                            </div>
+                            <div>
+                                <p style="text-align: center;font-size: small;"><strong>Talking Video</strong></p>
                                 <video id="gallary_dub1_3" controls width="100%" autoplay controls muted loop playsinline>
-                                    <source src="./data/Dub/f2TCJ9XBtvM_0072-fr-es.mp4" type="video/mp4">
+                                    <source src="./data/Dub_MPC/GT/QYYTMoQSAHk_0064-tgt.mp4" type="video/mp4">
                                 </video>
                             </div>
-                            <div>
-                                <p style="text-align: center;font-size: small;">French</p>
-                                <video id="gallary_dub1_4" controls width="100%" autoplay controls muted loop playsinline>
-                                    <source src="./data/Dub/f2TCJ9XBtvM_0072-fr-fr.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div>
-                                <p style="text-align: center;font-size: small;">Portuguese</p>
-                                <video id="gallary_dub1_5" controls width="100%" autoplay controls muted loop playsinline>
-                                    <source src="./data/Dub/f2TCJ9XBtvM_0072-fr-pt.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div>
-                                <p style="text-align: center;font-size: small;">Russain</p>
-                                <video id="gallary_dub1_6" controls width="100%" autoplay controls muted loop playsinline>
-                                    <source src="./data/Dub/f2TCJ9XBtvM_0072-fr-ru.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                        <div class="slider-row">
-                            <button type="mute", onclick="document.getElementById('gallary_dub1_1').muted=false">En Unmute</button>
-                            <button type="mute", onclick="document.getElementById('gallary_dub1_2').muted=false">De Unmute</button>
-                            <button type="mute", onclick="document.getElementById('gallary_dub1_3').muted=false">Es Unmute</button>
-                            <button type="mute", onclick="document.getElementById('gallary_dub1_4').muted=false">Fr Unmute</button>
-                            <button type="mute", onclick="document.getElementById('gallary_dub1_5').muted=false">Pt Unmute</button>
-                            <button type="mute", onclick="document.getElementById('gallary_dub1_6').muted=false">Ru Unmute</button>
+                    
                         </div>
 
-                        <button type="unmute" onclick="muteAll()">ALL Mute🔇</button>
+                        <img alt="" src="./src/line.png" style="width: 100%;margin: 0 auto;" />
 
-                        
-                        
-  
-                    </div>
-                </div>
-                
-                <div class="subcontent">
-                    <div class="video-container">
-                        <!-- <p id="tldr"><strong>Demo 1</strong></p> -->
-                        <div class="slider-row">
-                            <div>
-                                <p style="text-align: center;font-size: small;">English</p>
-                                <video id="gallary_dub2_1" controls width="100%" autoplay controls muted loop playsinline>
-                                    <source src="./data/Dub/QYYTMoQSAHk_0235-de-en.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div>
-                                <p style="text-align: center;font-size: small;">German</p>
-                                <video id="gallary_dub2_2" controls width="100%" autoplay controls muted loop playsinline>
-                                    <source src="./data/Dub/QYYTMoQSAHk_0235-de-de.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div>
-                                <p style="text-align: center;font-size: small;">Spanish</p>
-                                <video id="gallary_dub2_3" controls width="100%" autoplay controls muted loop playsinline>
-                                    <source src="./data/Dub/QYYTMoQSAHk_0235-de-es.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div>
-                                <p style="text-align: center;font-size: small;">French</p>
-                                <video id="gallary_dub2_4" controls width="100%" autoplay controls muted loop playsinline>
-                                    <source src="./data/Dub/QYYTMoQSAHk_0235-de-fr.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div>
-                                <p style="text-align: center;font-size: small;">Portuguese</p>
-                                <video id="gallary_dub2_5" controls width="100%" autoplay controls muted loop playsinline>
-                                    <source src="./data/Dub/QYYTMoQSAHk_0235-de-pt.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div>
-                                <p style="text-align: center;font-size: small;">Russain</p>
-                                <video id="gallary_dub2_6" controls width="100%" autoplay controls muted loop playsinline>
-                                    <source src="./data/Dub/QYYTMoQSAHk_0235-de-ru.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                        <div class="slider-row">
-                            <button type="mute", onclick="document.getElementById('gallary_dub2_1').muted=false">En Unmute</button>
-                            <button type="mute", onclick="document.getElementById('gallary_dub2_2').muted=false">De Unmute</button>
-                            <button type="mute", onclick="document.getElementById('gallary_dub2_3').muted=false">Es Unmute</button>
-                            <button type="mute", onclick="document.getElementById('gallary_dub2_4').muted=false">Fr Unmute</button>
-                            <button type="mute", onclick="document.getElementById('gallary_dub2_5').muted=false">Pt Unmute</button>
-                            <button type="mute", onclick="document.getElementById('gallary_dub2_6').muted=false">Ru Unmute</button>
+                        <div>
+                            <p style="text-align: center;font-size: small;">Result</p>
+                            <video id="gallary_dub1_1" controls width="100%" autoplay controls muted loop playsinline>
+                                <source src="./data/Dub_MPC/our/QYYTMoQSAHk_0064->BQZKs75RMqM_0000-our.mp4" type="video/mp4">
+                            </video>
                         </div>
 
-                        <button type="unmute" onclick="muteAll()">ALL Mute🔇</button>
-
-                        
                         
   
                     </div>
@@ -479,8 +410,7 @@
         
             </div>
         </section>
-
-
+        <br>
 
         <h4>
             <strong>4. Secure Generation</strong>
@@ -488,6 +418,79 @@
         <div style="text-align: center; ; ">
             <img alt="" src="src/secure.png" style="width: 94%;margin: 0 auto;" />
         </div>
+        <section class="hero is-light is-small">
+            <div class="hero-body">
+                <p id="tldr"><strong>Instruction</strong>: Please unmute manually 🔇.</p>
+                <div class="subcontent">
+                    <div class="video-container">
+                        <p id="tldr"><strong>Speech Secure Generation</strong></p>
+                        <div class="slider-row">
+                            <div>
+                                <p style="text-align: center;font-size: small;"><strong>Unwatermarked</strong></p>
+                                <audio controls class="mpc-audio-player">
+                                    <source src="./data/secure/QoyBYYpal1Y_0000-GT.wav" type="audio/wav">
+                                </audio>
+
+                                <p style="text-align: center;font-size: small;"><strong>Watermarked</strong></p>
+                                <audio controls class="mpc-audio-player">
+                                    <source src="./data/secure/QoyBYYpal1Y_0000-Watermarked.wav" type="audio/wav">
+                                </audio>
+                            </div>
+
+
+                            <div>
+                                <p style="text-align: center;font-size: small;"><strong>Detection Results</strong></p>
+                                <img alt="" src="./data/secure/audio_WM_prob.png" style="width: 100%;margin: 0 auto;" />
+                            </div>
+                    
+                        </div>
+
+   
+
+                        
+  
+                    </div>
+                </div>
+
+                <div class="subcontent">
+                    <div class="video-container">
+                        <p id="tldr"><strong>Speech Secure Generation</strong></p>
+                        <div class="slider-row">
+                            <div class="special-div">
+                                <p style="text-align: center;font-size: small;"><strong>Unwatermarked</strong></p>
+                                <video id="gallary_dub1_1" controls width="100%" autoplay controls muted loop playsinline>
+                                    <source src="./data/secure/81Ub0SMxZQo_0002-GT.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                                <div class="special-div">
+                                <p style="text-align: center;font-size: small;"><strong>Watermarked</strong></p>
+                                <video id="gallary_dub1_1" controls width="100%" autoplay controls muted loop playsinline>
+                                    <source src="./data/secure/81Ub0SMxZQo_0002-Watermarked.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                                <div class="special-div">
+                                <p style="text-align: center;font-size: small;"><strong>Pixel-wise Differences (x5)</strong></p>
+                                <video id="gallary_dub1_1" controls width="100%" autoplay controls muted loop playsinline>
+                                    <source src="./data/secure/81Ub0SMxZQo_0002-Diff.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                                            
+                        </div>
+                        <div class="special-div2">
+                            <p style="text-align: center;font-size: small;"><strong>Detection Results</strong></p>
+                            <img alt="" src="./data/secure/video_WM_prob.png" style="width: 100%;margin: 0 auto;" />
+                        </div>
+   
+
+                        
+  
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        
+        <br>
 
 
 
@@ -978,7 +981,7 @@
 
                     <div class="subcontent">
                         <div class="video-container">
-                            <p id="tldr"><strong>Demo 4</strong>: ou por não ser utilizada , porque não passou para a próxima geração  (Portuguese)</p>
+                            <p id="tldr"><strong>Demo 5</strong>: ou por não ser utilizada , porque não passou para a próxima geração  (Portuguese)</p>
             
                             <video id="gallary" controls width="90%" autoplay controls muted loop playsinline>
                                 <source src="./data/LC_all/Rmz5rFzwVrc_0106-Pt.mp4" type="video/mp4">
@@ -1005,11 +1008,45 @@
         </h4>
         <section class="hero is-light is-small">
             <div class="hero-body">
-                <div class="container">
+                <div class="subcontent">
+                    <div class="video-container">           
+                        <video id="gallary" controls width="90%" autoplay controls muted loop playsinline>
+                            <source src="./data/FC_show1/UhOlDWx4h3M_0023->8VwTZFYSfvw_0001.mp4" type="video/mp4">
+                        </video>
+  
+                    </div>
+                </div>
 
+                <div class="container">
+                    <div class="subcontent">
+                        <div class="video-container">           
+                            <video id="gallary" controls width="90%" autoplay controls muted loop playsinline>
+                                <source src="./data/FC_show1/HLIJkmy3vy8_0003->ONGvzb5sYhY_0038.mp4" type="video/mp4">
+                            </video>
+      
+                        </div>
+                    </div>
+
+                    <div class="subcontent">
+                        <div class="video-container">           
+                            <video id="gallary" controls width="90%" autoplay controls muted loop playsinline>
+                                <source src="./data/FC_show1/UhOlDWx4h3M_0006->RiM5aSvaNkg_0001.mp4" type="video/mp4">
+                            </video>
+      
+                        </div>
+                    </div>
+
+                    
                 </div>
             </div>
         </section>
+        <details>
+            <summary> See Image Comparison </summary>
+            <img src="src/FC.png" , style="width: 100%;">
+            <p>
+                Specifically, we observe that the baselines tend to align the attributes of the reference video, resulting in reduced diversity of the generated content due to one-to-one mapping. Our Diff-Dolly incorporates only the landmark and background information from the reference video during inference, reducing dependency on the reference video and enhancing consistency with the source speaker's style. We also observe that DiffSwap, despite using the diffusion model, shows poor temporal consistency in videos focusing on image generation. In contrast, Diff-Dolly achieves strong temporal consistency in videos and remains compatible with image generation. 
+            </p>
+        </details>
 
         <br>
         <h4 style="text-align:center;">
@@ -1017,9 +1054,101 @@
         </h4>
         <section class="hero is-light is-small">
             <div class="hero-body">
-                <div class="container">
+                <p id="tldr"><strong>Instruction</strong>: Please unmute manually 🔇.</p>
+                <div class="subcontent">
+                    <div class="video-container">
+                        <!-- <p id="tldr"><strong>Demo 1</strong></p> -->
+                        <div class="slider-row">
+                            <div>
+                                <p style="text-align: center;font-size: small;"><strong>Text</strong></p>
+                                <!-- <p style="text-align: center;font-size: small;">aber auch eine ganz andere,eine sehr persönliche bedeutung.</p> -->
+                                <p style="text-align: center; font-size: small; width: 180px; max-height: 400px; overflow: hidden;">
+                                    aber auch eine ganz andere, eine sehr persönliche bedeutung.
+                                </p>
+                                
+                                
+                                
+                            </div>
+                            <div>
+                                <p style="text-align: center;font-size: small;"><strong>Speech</strong></p>
+                                <audio controls class="mpc-audio-player">
+                                    <source src="./data/Dub_MPC/GT/BQZKs75RMqM_0000-src.wav" type="audio/wav">
+                                </audio>
+                            </div>
+                            <div>
+                                <p style="text-align: center;font-size: small;"><strong>Facial Image</strong></p>
+                                <img alt="" src="./data/Dub_MPC/GT/BQZKs75RMqM_0000-src.png" style="width: 100%;margin: 0 auto;" />
+                            </div>
+                            <div>
+                                <p style="text-align: center;font-size: small;"><strong>Talking Video</strong></p>
+                                <video id="gallary_dub1_3" controls width="100%" autoplay controls muted loop playsinline>
+                                    <source src="./data/Dub_MPC/GT/QYYTMoQSAHk_0064-tgt.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                    
+                        </div>
 
+                        <img alt="" src="./src/line.png" style="width: 100%;margin: 0 auto;" />
+
+                        <div>
+                            <p style="text-align: center;font-size: small;">Result</p>
+                            <video id="gallary_dub1_1" controls width="100%" autoplay controls muted loop playsinline>
+                                <source src="./data/Dub_MPC/our/QYYTMoQSAHk_0064->BQZKs75RMqM_0000-our.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        
+  
+                    </div>
                 </div>
+                
+                <div class="subcontent">
+                    <div class="video-container">
+                        <!-- <p id="tldr"><strong>Demo 1</strong></p> -->
+                        <div class="slider-row">
+                            <div>
+                                <p style="text-align: center;font-size: small;"><strong>Text</strong></p>
+                                <!-- <p style="text-align: center;font-size: small;">aber auch eine ganz andere,eine sehr persönliche bedeutung.</p> -->
+                                <p style="text-align: center; font-size: small; width: 180px; max-height: 400px; overflow: hidden;">
+                                    weil es einfach eine problematik ist,die mich selbst betroffen hat.
+                                </p>
+                                
+                                
+                                
+                            </div>
+                            <div>
+                                <p style="text-align: center;font-size: small;"><strong>Speech</strong></p>
+                                <audio controls class="mpc-audio-player">
+                                    <source src="./data/Dub_MPC/GT/eNAHVnkll5M_0004-src.wav" type="audio/wav">
+                                </audio>
+                            </div>
+                            <div>
+                                <p style="text-align: center;font-size: small;"><strong>Facial Image</strong></p>
+                                <img alt="" src="./data/Dub_MPC/GT/eNAHVnkll5M_0004-src.png" style="width: 100%;margin: 0 auto;" />
+                            </div>
+                            <div>
+                                <p style="text-align: center;font-size: small;"><strong>Talking Video</strong></p>
+                                <video id="gallary_dub1_3" controls width="100%" autoplay controls muted loop playsinline>
+                                    <source src="./data/Dub_MPC/GT/UhOlDWx4h3M_0079-tgt.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                    
+                        </div>
+
+                        <img alt="" src="./src/line.png" style="width: 100%;margin: 0 auto;" />
+
+                        <div>
+                            <p style="text-align: center;font-size: small;">Result</p>
+                            <video id="gallary_dub1_1" controls width="100%" autoplay controls muted loop playsinline>
+                                <source src="./data/Dub_MPC/our/UhOlDWx4h3M_0079->eNAHVnkll5M_0004-our.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        
+  
+                    </div>
+                </div>        
+        
             </div>
         </section>
         
@@ -1043,22 +1172,14 @@
         </h3>
         <img src="src/results/results-quan-v2.png" , style="width: 100%;">
         <p>
-            We averaged scores over 90 sequences from the DAVIS-2017
-            dataset. Our method scores <strong>highest</strong> in Depth MSE and <u>second-highest</u> for temporal
-            smoothness CLIP scores and warp error. Our user study win rates confirm that our method produces the best
-            quality for both
-            aspects (i.e. all win rates over 50%).
+            we compare Diff-Dolly with previous state-of-the-art (SOTA) methods on the CMC-TED. These methods are from different media cloning tasks. 
         </p>
         <h3 style="text-align:center;">
             <strong>User Study</strong>
         </h3>
         <img src="src/userstudy.png" , style="width: 100%;">
         <p>
-            We averaged scores over 90 sequences from the DAVIS-2017
-            dataset. Our method scores <strong>highest</strong> in Depth MSE and <u>second-highest</u> for temporal
-            smoothness CLIP scores and warp error. Our user study win rates confirm that our method produces the best
-            quality for both
-            aspects (i.e. all win rates over 50%).
+            The scoring results of the user study are presented in the Figure. Diff-Dolly demonstrates a clear advantage over SOTA methods in all aspects, particularly in achieving higher voice similarity, lip-sync accuracy and video quality, which validates the effectiveness of our method in multi- media cloning. Furthermore, for scores rated as 4 to 5 of SyncMOS, our method achieved 100% of the user votes, whereas IP-LAP and TalkLip only garnered 60% and 53% of the votes, respectively. For scores rated as 4 to 5 of VMOS, our method achieved 93% of the user votes, whereas VITS and HPM only garnered 40% and 20% of the votes, respectively. Although the difference in IDMOS between Diff-Dolly and the top-performing methods is relatively small, we still achieve at least 10% improvement of the video quality on the face cloning.
         </p>
     </div>
 <!-- 

@@ -81,7 +81,7 @@ button[type="submit"] {
   .slider-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* 顶部对齐 */;
     gap: 30px;
     margin-top: 10px;
   }
@@ -125,6 +125,12 @@ button[type="submit"] {
     height: 40px; /* 调整高度 */
 }
 
+.mpc-audio-player {
+  width: 180px; /* 调整宽度 */
+  height: 40px; /* 调整高度 */
+  align-items: center; /* 顶部对齐 */;
+}
+
 .tiny-audio-player {
   width: 140px; /* 调整宽度 */
   height: 40px; /* 调整高度 */
@@ -136,9 +142,15 @@ button[type="submit"] {
 }
 
 
-
-
 .normal-audio-player {
   width: 400px; /* 调整宽度 */
   height: 40px; /* 调整高度 */
+}
+
+.special-div {
+  width: 170px; /* 调整宽度 */
+}
+
+.special-div2 {
+  width: 600px; /* 调整宽度 */
 }
