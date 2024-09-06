@@ -83,6 +83,6 @@ Xin-Cheng Wen#, **JiaXin Ye#**, Yan Luo, Yong Xu, XuanZe Wang, ChangLi Wu, Kun-H
 
 - Journal Reviewer of IEEE T-NNLS, CAAI Transactions on Intelligence Technology.
 - Conference Reviewer of ACM MM 2024, ICASSP 2024, INTERSPEECH 2024.
-<div style="width:200px; margin-left: 30px;">
+<div style="width:240px; margin-left: 150px;">
 <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=CrYyAXpfE0tPRkdDzd0pJE5tC29vaIZMa_nleFFNptE"></script>
-</dic>
+</div>
